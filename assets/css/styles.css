@@ -1,0 +1,13 @@
+/* font color: #333333 (dark grey)
+
+
+*/
+
+*{
+    box-sizing: border-box;
+}
+
+.navbar a{
+    color: white;
+}
+
