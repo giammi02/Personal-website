@@ -1,0 +1,91 @@
+/*$primaryColor: rgb(114,102,216); */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(10, 25, 47);
+  color: #5DEEAC;
+}
+
+/* Mobiles */
+/* tablet */
+/* pc */
+@media only screen and (min-width: 961px) {
+  .main-nav {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Rockwell Extra Bold,Rockwell Bold,monospace";
+    font-weight: 500;
+    font-size: 1em;
+  }
+  .nav-1 {
+    width: 25%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  .nav-1 #logo {
+    width: 50px;
+    margin-left: 20px;
+  }
+  .nav-2 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+  .nav-2 a {
+    display: inline;
+    width: 33%;
+    padding: 15px;
+    text-transform: uppercase;
+    transition: 0.3s;
+  }
+  .nav-2 a:hover {
+    color: rgb(139, 131, 167);
+    transition: 0.4s;
+  }
+  .nav-3 {
+    width: 25%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  .animated-line {
+    position: relative;
+    background-color: #5DEEAC;
+    display: block;
+    height: 2px;
+    border-radius: 2px;
+    margin-top: 8px;
+    overflow: hidden;
+    left: 13px;
+    width: 51px;
+    transition-duration: 0.5s;
+  }
+  a {
+    color: #5DEEAC;
+  }
+  a :hover {
+    text-decoration: underline;
+  }
+  a:link {
+    text-decoration: none;
+  }
+  .icon {
+    font-size: 24px;
+    margin-right: 20px;
+    color: #5DEEAC;
+    transition-duration: 0.4s;
+  }
+  .icon:hover {
+    color: rgb(139, 131, 167);
+    transform: scale(1.2);
+  }
+}/*# sourceMappingURL=styles.css.map */
