@@ -1,5 +1,5 @@
 /*$primaryColor: rgb(114,102,216); */
-$primaryColor: rgb(10,25,47);
+$primaryColor: rgb(10,20,45); 
 $secondColor: #5DEEAC;
 $greyColor: rgb(139, 131, 167);
 $primaryFont: "Lucida Sans Typewriter";
@@ -18,30 +18,8 @@ body
     color: $secondColor;
 }
 
-
-
-
 /* Mobiles */
-
-
-
-
-
-/* tablet */
-@media only screen and (min-width: 421px) and (max-width: 960px)
-{
-    body
-    {
-    }
-}
-/* pc */
-@media only screen and (min-width:961px) 
-{
-    body
-    {
-    }
-
-    .main-nav
+.main-nav
 {
     width: 100%;
     height: 70px;
@@ -54,10 +32,9 @@ body
     font-size: 1em;
 }
 
-
 .nav-1
 {
-    width: 25%;
+    width: 50%;
     display:flex;
     justify-content: start;
     align-items: center;
@@ -67,6 +44,61 @@ body
         margin-left: 20px;
     }
 }
+.mobile-menu
+{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: center;;
+
+    .button
+{
+    background:none;
+    border: none;
+    color: $greyColor;
+    cursor: pointer;
+
+    height: 30px;
+    font-size: 1.25em;
+    margin: 30px;
+
+}
+
+.button:hover
+{
+    color: $secondColor; 
+}
+}
+
+
+
+.nav-2,
+.nav-3
+{
+    display: none;
+}
+
+
+
+/* tablets and medium screen devices */
+@media only screen and (min-width: 480px)
+{
+    body
+    {
+    }
+
+}
+/* desktops */
+@media only screen and (min-width:960px) 
+{
+
+
+.nav-1
+{
+    display: flex;
+    width: 25%;
+}
+
 .nav-2
 {
     width:50%;
@@ -74,77 +106,61 @@ body
     justify-content: center;
     align-items: center;
     list-style: none;
-    
+
     a
     {
-        display: inline;
-        width: 33%;
+        text-decoration: none;
+        display: inline-block;
         padding: 15px;
         text-transform: uppercase;
         transition: 0.3s;
+        color: $greyColor;
+        
 
     }
     a:hover
         {
-            color: $greyColor;
+            transform: translate(0, -5px);
+            color: $secondColor;
             transition: 0.4s;
-        } 
+        }
+
      
 }
 
 .nav-3
 {
-    width:25%;
+    width:25% !important; 
     display: flex;
     justify-content: end;
     align-items: center;
 }
 
-.animated-line
-{
-    position: relative;
-    background-color: $secondColor;    ;
-    display: block;
-    height: 2px;
-    border-radius: 2px;
-    margin-top: 8px;
-    overflow: hidden;
-
-    left: 13px;
-    width: 51px;
-    transition-duration: 0.5s;
-    
-}
-
-
-a
-{
-    color: $secondColor;
-
-    :hover
-    {
-        text-decoration: underline;
-    }
-}
-a:link
-{
-    text-decoration: none;
-}
-
 
 .icon
 {
-    font-size: 24px;
+    font-size: 1.5em;
     margin-right: 20px;
-    color: $secondColor;
+    color: $greyColor;
     transition-duration: 0.4s;
+    text-decoration: none;
 
 }
 
 .icon:hover
 {
-    color: $greyColor;
+    color: $secondColor;
     transform: scale(1.2);
 }
+.mobile-menu
+{
+    display: none;
+}
+}
+
+
+/* large screens */
+@media only screen and (min-width: 1200px) 
+{
 
 }
