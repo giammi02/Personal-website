@@ -18,18 +18,39 @@ body
     color: $secondColor;
 }
 
+
 /* Mobiles */
-.main-nav
+.nav-container
+{
+width: 100%;
+position: fixed;
+z-index:1;
+}
+
+.prova
 {
     width: 100%;
-    height: 70px;
+    position: absolute;
+    z-index: 0;
+    margin-top: 80px;
+}
 
+.main-nav
+{
+    
+    width: 100%;
+    height: 70px;
+    background-color: white;
     display: flex;
     justify-content:  space-around;
     
     font-family: $fontStack;
     font-weight: 500;
     font-size: 1em;
+
+    transition-duration: 0.4s;
+
+    overflow: hidden;
 }
 
 .nav-1
@@ -37,30 +58,30 @@ body
     width: 50%;
     display:flex;
     justify-content: start;
-    align-items: center;
+    
     #logo
     {
         width: 50px;
         margin-left: 20px;
+        margin-top: 20px;
     }
 }
-.mobile-menu
+.mobile-menu-button-container
 {
     width: 50%;
     display: flex;
     justify-content: end;
-    align-items: center;;
-
+    
     .button
-{
-    background:none;
+    {
+    background:transparent;
     border: none;
     color: $greyColor;
     cursor: pointer;
 
     height: 30px;
     font-size: 1.25em;
-    margin: 30px;
+    margin: 20px;
 
 }
 
@@ -72,13 +93,48 @@ body
 
 
 
-.nav-2,
-.nav-3
+
+.nav-2
 {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+    height: 100px;
+    a
+    {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $greyColor;
+        padding: 10px;
+    }
+
+    a:hover,
+    a:active
+    {
+        background-color: black;
+    }
 }
 
+.nav-3
+{
+    display: flex;
+    flex-direction:  row;
+    margin-top: 10px;
+}
 
+.icon
+{
+    font-size: 1.5em;
+    color: $greyColor;
+    transition-duration: 0.4s;
+    text-decoration: none;
+}
+.icon:hover,
+.icon:active
+{
+    background-color: transparent;
+}
 
 /* tablets and medium screen devices */
 @media only screen and (min-width: 480px)
@@ -92,7 +148,10 @@ body
 @media only screen and (min-width:960px) 
 {
 
+.main-nav
+{
 
+}
 .nav-1
 {
     display: flex;
@@ -106,7 +165,9 @@ body
     justify-content: center;
     align-items: center;
     list-style: none;
-
+    flex-direction: row;
+    margin-top: 0px;
+    height: 70px;
     a
     {
         text-decoration: none;
@@ -115,14 +176,14 @@ body
         text-transform: uppercase;
         transition: 0.3s;
         color: $greyColor;
-        
-
     }
     a:hover
         {
             transform: translate(0, -5px);
             color: $secondColor;
             transition: 0.4s;
+            background-color: transparent;
+
         }
 
      
@@ -134,6 +195,7 @@ body
     display: flex;
     justify-content: end;
     align-items: center;
+    flex-direction: row;
 }
 
 
@@ -152,10 +214,11 @@ body
     color: $secondColor;
     transform: scale(1.2);
 }
-.mobile-menu
+.mobile-menu-button-container
 {
     display: none;
 }
+
 }
 
 

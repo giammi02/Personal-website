@@ -11,49 +11,95 @@ body {
 }
 
 /* Mobiles */
+.nav-container {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+.prova {
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+  margin-top: 80px;
+}
+
 .main-nav {
   width: 100%;
   height: 70px;
+  background-color: white;
   display: flex;
   justify-content: space-around;
   font-family: "Rockwell Extra Bold,Rockwell Bold,monospace";
   font-weight: 500;
   font-size: 1em;
+  transition-duration: 0.4s;
+  overflow: hidden;
 }
 
 .nav-1 {
   width: 50%;
   display: flex;
   justify-content: start;
-  align-items: center;
 }
 .nav-1 #logo {
   width: 50px;
   margin-left: 20px;
+  margin-top: 20px;
 }
 
-.mobile-menu {
+.mobile-menu-button-container {
   width: 50%;
   display: flex;
   justify-content: end;
-  align-items: center;
 }
-.mobile-menu .button {
-  background: none;
+.mobile-menu-button-container .button {
+  background: transparent;
   border: none;
   color: rgb(139, 131, 167);
   cursor: pointer;
   height: 30px;
   font-size: 1.25em;
-  margin: 30px;
+  margin: 20px;
 }
-.mobile-menu .button:hover {
+.mobile-menu-button-container .button:hover {
   color: #5DEEAC;
 }
 
-.nav-2,
+.nav-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+  height: 100px;
+}
+.nav-2 a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(139, 131, 167);
+  padding: 10px;
+}
+.nav-2 a:hover,
+.nav-2 a:active {
+  background-color: black;
+}
+
 .nav-3 {
-  display: none;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.icon {
+  font-size: 1.5em;
+  color: rgb(139, 131, 167);
+  transition-duration: 0.4s;
+  text-decoration: none;
+}
+
+.icon:hover,
+.icon:active {
+  background-color: transparent;
 }
 
 /* tablets and medium screen devices */
@@ -69,6 +115,9 @@ body {
     justify-content: center;
     align-items: center;
     list-style: none;
+    flex-direction: row;
+    margin-top: 0px;
+    height: 70px;
   }
   .nav-2 a {
     text-decoration: none;
@@ -82,12 +131,14 @@ body {
     transform: translate(0, -5px);
     color: #5DEEAC;
     transition: 0.4s;
+    background-color: transparent;
   }
   .nav-3 {
     width: 25% !important;
     display: flex;
     justify-content: end;
     align-items: center;
+    flex-direction: row;
   }
   .icon {
     font-size: 1.5em;
@@ -100,7 +151,7 @@ body {
     color: #5DEEAC;
     transform: scale(1.2);
   }
-  .mobile-menu {
+  .mobile-menu-button-container {
     display: none;
   }
 }

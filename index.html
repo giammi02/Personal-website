@@ -1,45 +1,52 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html lang="en">
-  <head>
-    <!-- meta tags -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- css -->
-    <link href="/assets/scss/styles.css" rel="stylesheet">
 
-    <!-- font awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+<head>
+  <!-- meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title> Home </title>
+  <!-- css -->
+  <link href="/assets/scss/styles.css" rel="stylesheet">
 
-  </head>
+  <!-- font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
-  <header class="nav-container"> 
-    <nav class="main-nav"> 
-     <div class="nav-1">
-      <a href="#"><img src="assets/img/undraw_code.svg" id="logo"></a>
-     </div> 
-      <div class="nav-2"> 
-        <div> 
-         <a href="#"> Home</a>
-         <a href="contacts/index.html"> Contact</a>
-         <a href="#"> Portfolio </a>
-         <a href="#"> CV </a>
-         </div>
+  <title> Home </title>
+
+</head>
+
+
+<!--<div data-menu class="mobile-menu"> -->
+
+<body>
+  <header class="nav-container">
+    <nav data-mainMenu class="main-nav">
+      <div class="nav-1">
+        <a href="#"><img src="assets/img/undraw_code.svg" id="logo"></a>
       </div>
-      <div class="nav-3">
-      <a href="#" class="fab fa-linkedin icon"></a>
-      <a href="#" class="fab fa-github icon"></a>
-      <a href="#" class="fab fa-instagram icon"></a>
-     </div>
-     <div class="mobile-menu"> 
-      <input class="button" type="button" value="Menu"> </input> 
-    </div>
+        <div data-nav2 class="nav-2">
+          <a href="#"> Home</a>
+          <a href="#"> Contact</a>
+          <a href="#"> Portfolio </a>
+          <a href="#"> CV </a>
+        </div>
+      </div>
+      <div data-nav3 class="nav-3">
+        <a href="#" class="fab fa-linkedin icon"></a>
+        <a href="#" class="fab fa-github icon"></a>
+        <a href="#" class="fab fa-instagram icon"></a>
+      </div>
+      <div class="mobile-menu-button-container">
+        <p data-menuButton class="button" type="button" value=""> Menu</p>
+      </div>
     </nav>
   </header>
-  <body>
-   
-    <script src="assets/js/script.js">  </script>
-  </body>
+
+  <p class="prova"> miao </p>
+
+  <script src="assets/js/script.js">  </script>
+</body>
+
+
 </html>
