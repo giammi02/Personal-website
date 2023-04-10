@@ -1,3 +1,4 @@
+// ***** NAVIGATION BAR SCRIPT ***** //
 let mainMenu = document.querySelector("[data-mainMenu]");
 let menuButton = document.querySelector("[data-menubutton]");
 let nav2 = document.querySelector("[data-nav2");
@@ -10,7 +11,7 @@ expandMenu();
 });
 
 
-let mediaQueryStart = window.matchMedia('(max-width: 959px)')
+let mediaQueryStart = window.matchMedia('(max-width: 859px)')
 if (mediaQueryStart.matches) 
         AdjustmentsMobile();
 
@@ -68,3 +69,4 @@ function expandMenu()
 
 }
 
+// ***** END NAVIGATION BAR SCRIPT ***** //

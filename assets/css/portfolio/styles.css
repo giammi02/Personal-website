@@ -1,0 +1,266 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.grid-container-portfolio {
+  display: grid;
+  grid-template-columns: 90vw;
+  grid-template-rows: 56.25vw;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 30px;
+}
+
+.project-card-container {
+  height: 56.25vw;
+  width: 90vw;
+  overflow: hidden;
+}
+
+.project-card {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90vw;
+  height: 50.625vw;
+  border-radius: 15px;
+  background-color: rgba(32, 32, 32, 0.8);
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: 100%;
+  overflow: hidden;
+  margin-top: 4.5vw;
+}
+
+.project-name {
+  margin-left: 5.625vw;
+  margin-top: 8%;
+  font-size: 4.5vw;
+  color: white;
+  font-weight: bold;
+}
+
+.button-project {
+  position: relative;
+  margin-bottom: 30px;
+  margin-left: 5.625vw;
+  border: none;
+  height: 10.125vw;
+  width: 22.5vw;
+  border-radius: 5px;
+  background-color: grey;
+  transition-duration: 0.4s;
+  font-size: 3.6vw;
+}
+.button-project a {
+  text-decoration: none;
+  color: lightgreen;
+  font-weight: bold;
+}
+
+.button-project:hover {
+  background-color: white;
+  transition-duration: 0.4s;
+}
+
+.lang-used {
+  position: absolute;
+  z-index: 10;
+  height: 11.25vw;
+  width: 11.25vw;
+  background-color: rgba(32, 32, 32, 0.5);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.lang-used img {
+  width: 100%;
+}
+
+.lang-used.item-1 {
+  margin-left: 5.625vw;
+}
+
+.lang-used.item-2 {
+  margin-left: 22.5vw;
+}
+
+.lang-used.item-3 {
+  margin-left: 39.375vw;
+}
+
+.lang-used.item-4 {
+  margin-left: 56.25vw;
+}
+
+#project-card-1 {
+  background-image: url("black_swan.jpg");
+}
+
+@media (min-width: 576px) {
+  .grid-container-portfolio {
+    grid-template-columns: repeat(2, 45vw);
+    grid-template-rows: 28.125vw;
+  }
+  .project-card-container {
+    height: 28.125vw;
+    width: 45vw;
+  }
+  .project-card {
+    width: 45vw;
+    height: 25.3125vw;
+    margin-top: 2.25vw;
+  }
+  .button-project {
+    height: 5.0625vw;
+    width: 11.25vw;
+    font-size: 1.8vw;
+    margin-left: 2.8125vw;
+  }
+  .lang-used {
+    height: 5.625vw;
+    width: 5.625vw;
+  }
+  .project-name {
+    margin-left: 2.8125vw;
+    font-size: 2.25vw;
+  }
+  .lang-used.item-1 {
+    margin-left: 2.8125vw;
+  }
+  .lang-used.item-2 {
+    margin-left: 11.25vw;
+  }
+  .lang-used.item-3 {
+    margin-left: 19.6875vw;
+  }
+  .lang-used.item-4 {
+    margin-left: 28.125vw;
+  }
+}
+@media (min-width: 992px) {
+  .grid-container-portfolio {
+    grid-template-columns: repeat(3, 30vw);
+    grid-template-rows: 18.375vw;
+  }
+  .project-card-container {
+    height: 18.375vw;
+    width: 30vw;
+  }
+  .project-card {
+    width: 30vw;
+    height: 16.875vw;
+    margin-top: 1.2vw;
+  }
+  .button-project {
+    height: 3.375vw;
+    width: 7.5vw;
+    font-size: 1.2vw;
+    margin-left: 1.5vw;
+  }
+  .lang-used {
+    height: 3vw;
+    width: 3vw;
+  }
+  .project-name {
+    margin-left: 1.5vw;
+    font-size: 1.5vw;
+  }
+  .lang-used.item-1 {
+    margin-left: 1.5vw;
+  }
+  .lang-used.item-2 {
+    margin-left: 6vw;
+  }
+  .lang-used.item-3 {
+    margin-left: 10.5vw;
+  }
+  .lang-used.item-4 {
+    margin-left: 15vw;
+  }
+}
+@media (min-width: 1200px) {
+  .grid-container-portfolio {
+    grid-template-columns: repeat(4, 22.5vw);
+    grid-template-rows: 13.78125vw;
+  }
+  .project-card-container {
+    height: 13.78125vw;
+    width: 22.5vw;
+  }
+  .project-card {
+    width: 22.5vw;
+    height: 12.65625vw;
+    margin-top: 0.9vw;
+  }
+  .button-project {
+    height: 2.53125vw;
+    width: 5.625vw;
+    font-size: 0.9vw;
+    margin-left: 1.125vw;
+  }
+  .lang-used {
+    height: 2.25vw;
+    width: 2.25vw;
+  }
+  .project-name {
+    margin-left: 1.125vw;
+    font-size: 1.125vw;
+  }
+  .lang-used.item-1 {
+    margin-left: 1.125vw;
+  }
+  .lang-used.item-2 {
+    margin-left: 4.5vw;
+  }
+  .lang-used.item-3 {
+    margin-left: 7.875vw;
+  }
+  .lang-used.item-4 {
+    margin-left: 11.25vw;
+  }
+}
+@media (min-width: 1900px) {
+  .grid-container-portfolio {
+    grid-template-columns: repeat(5, 18vw);
+    grid-template-rows: 11.025vw;
+  }
+  .project-card-container {
+    height: 11.025vw;
+    width: 18vw;
+  }
+  .project-card {
+    width: 18vw;
+    height: 10.125vw;
+    margin-top: 0.72vw;
+  }
+  .button-project {
+    height: 2.025vw;
+    width: 4.5vw;
+    font-size: 0.72vw;
+    margin-left: 0.9vw;
+  }
+  .lang-used {
+    height: 1.8vw;
+    width: 1.8vw;
+  }
+  .project-name {
+    margin-left: 0.9vw;
+    font-size: 0.9vw;
+  }
+  .lang-used.item-1 {
+    margin-left: 0.9vw;
+  }
+  .lang-used.item-2 {
+    margin-left: 3.6vw;
+  }
+  .lang-used.item-3 {
+    margin-left: 6.3vw;
+  }
+  .lang-used.item-4 {
+    margin-left: 9vw;
+  }
+}/*# sourceMappingURL=styles.css.map */

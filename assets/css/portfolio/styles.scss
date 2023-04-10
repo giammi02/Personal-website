@@ -1,0 +1,382 @@
+$secondcolor: lightgreen;
+
+$cardWidthXS: 90vw;
+$langSideXS: 0.125 * $cardWidthXS;
+
+$cardWidthS: 45vw;
+$langSideS: 0.125 * $cardWidthS;
+
+$cardWidthM: 45vw;
+$langSideM: 0.125 * $cardWidthM;
+
+$cardWidthL: 30vw;
+$langSideL: 0.1 * $cardWidthL;
+
+$cardWidthXL: 22.5vw;
+$langSideXL: 0.1 * $cardWidthXL;
+
+$cardWidthXXL: 18vw;
+$langSideXXL: 0.1 * $cardWidthXXL;
+
+
+
+@function cardHeight($cardWidth) //calculate height for 16:9 proportion
+
+    {
+    @return calc($cardWidth * 9vw / 16vw);
+}
+
+@function containerHeight($cardWidth, $langHeight) //calculate height for 16:9 proportion (container)
+
+    {
+    @return calc($cardWidth * 9vw / 16vw + $langHeight/2);
+}
+
+// X-Small devices (portrait phones, less than 576px)
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.grid-container-portfolio {
+    display: grid;
+    grid-template-columns: $cardWidthXS;
+    grid-template-rows: containerHeight($cardWidthXS, $langSideXS);
+    justify-content: center;
+
+    margin-top: 40px;
+    gap: 30px;
+}
+
+.project-card-container {
+    //height is defined by project-card height + the part of the lang-used out of the box
+    height: containerHeight($cardWidthXS, $langSideXS);
+    width: $cardWidthXS;
+    overflow: hidden;
+}
+
+.project-card {
+
+    position: relative;
+    z-index: 5;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: $cardWidthXS;
+    height: cardHeight($cardWidthXS);
+
+    border-radius: 15px;
+    background-color: rgba(32, 32, 32, 0.8);
+    background-blend-mode: overlay;
+    background-position: center;
+    background-size: 100%;
+
+    overflow: hidden;
+    margin-top: calc($langSideXS/2.5);
+
+}
+
+.project-name {
+    margin-left: $langSideXS * 0.5;
+    margin-top: 8%;
+    font-size: calc(0.05 * $cardWidthXS);
+    color: white;
+    font-weight: bold;
+
+}
+
+.button-project {
+    position: relative;
+    margin-bottom: 30px;
+    margin-left: $langSideXS * 0.5;
+
+
+    border: none;
+    height: calc(0.2 * cardHeight($cardWidthXS));
+    width: calc(0.25 * $cardWidthXS);
+    border-radius: 5px;
+
+    background-color: grey;
+
+    transition-duration: 0.4s;
+
+    font-size: 0.04 * $cardWidthXS;
+
+    a {
+        text-decoration: none;
+        color: $secondcolor;
+        font-weight: bold;
+    }
+}
+
+.button-project:hover {
+    background-color: white;
+    transition-duration: 0.4s
+}
+
+
+.lang-used {
+    position: absolute;
+    z-index: 10;
+
+    height: $langSideXS;
+    width: $langSideXS;
+
+    background-color: rgba(32, 32, 32, 0.50);
+
+    border-radius: 5px;
+
+    overflow: hidden;
+
+    img {
+        width: 100%;
+    }
+}
+
+.lang-used.item-1 {
+    margin-left: calc($langSideXS * 0.5);
+}
+
+.lang-used.item-2 {
+    margin-left: calc($langSideXS * 2);
+}
+
+.lang-used.item-3 {
+    margin-left: calc($langSideXS * 3.5);
+}
+
+.lang-used.item-4 {
+    margin-left: calc($langSideXS * 5);
+}
+
+//Project's images
+#project-card-1 {
+    background-image: url("black_swan.jpg");
+}
+
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .grid-container-portfolio {
+        grid-template-columns: repeat(2, $cardWidthS);
+        grid-template-rows: containerHeight($cardWidthS, $langSideS);
+    }
+
+    .project-card-container {
+        //height is defined by project-card height + the part of the lang-used out of the box
+        height: containerHeight($cardWidthS, $langSideS);
+        width: $cardWidthS;
+    }
+
+    .project-card {
+        width: $cardWidthS;
+        height: cardHeight($cardWidthS);
+        margin-top: calc($langSideS/2.5);
+
+    }
+
+    .button-project {
+        height: calc(0.2 * cardHeight($cardWidthS));
+        width: calc(0.25 * $cardWidthS);
+        font-size: 0.04 * $cardWidthS;
+        margin-left: $langSideS * 0.5;
+    }
+
+    .lang-used {
+        height: $langSideS;
+        width: $langSideS;
+    }
+
+    .project-name {
+        margin-left: $langSideS * 0.5;
+        font-size: calc(0.05 * $cardWidthS);
+    }
+
+    .lang-used.item-1 {
+        margin-left: calc($langSideS * 0.5);
+    }
+    
+    .lang-used.item-2 {
+        margin-left: calc($langSideS * 2);
+    }
+    
+    .lang-used.item-3 {
+        margin-left: calc($langSideS * 3.5);
+    }
+    
+    .lang-used.item-4 {
+        margin-left: calc($langSideS * 5);
+    }
+}
+
+// Medium devices (tablets, 768px and up) *** SAME AS SMALL DEVICES ***
+@media (min-width: 768px) {}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+
+    .grid-container-portfolio {
+        grid-template-columns: repeat(3, $cardWidthL);
+        grid-template-rows: containerHeight($cardWidthL, $langSideL);
+    }
+
+    .project-card-container {
+        //height is defined by project-card height + the part of the lang-used out of the box
+        height: containerHeight($cardWidthL, $langSideL);
+        width: $cardWidthL;
+    }
+
+    .project-card {
+        width: $cardWidthL;
+        height: cardHeight($cardWidthL);
+        margin-top: calc($langSideL/2.5);
+
+    }
+
+    .button-project {
+        height: calc(0.2 * cardHeight($cardWidthL));
+        width: calc(0.25 * $cardWidthL);
+        font-size: 0.04 * $cardWidthL;
+        margin-left: $langSideL * 0.5;
+    }
+
+    .lang-used {
+        height: $langSideL;
+        width: $langSideL;
+    }
+
+    .project-name {
+        margin-left: $langSideL * 0.5;
+        font-size: calc(0.05 * $cardWidthL);
+    }
+
+    .lang-used.item-1 {
+        margin-left: calc($langSideL * 0.5);
+    }
+    
+    .lang-used.item-2 {
+        margin-left: calc($langSideL * 2);
+    }
+    
+    .lang-used.item-3 {
+        margin-left: calc($langSideL * 3.5);
+    }
+    
+    .lang-used.item-4 {
+        margin-left: calc($langSideL * 5);
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .grid-container-portfolio {
+        grid-template-columns: repeat(4, $cardWidthXL);
+        grid-template-rows: containerHeight($cardWidthXL, $langSideXL);
+    }
+
+    .project-card-container {
+        //height is defined by project-card height + the part of the lang-used out of the box
+        height: containerHeight($cardWidthXL, $langSideXL);
+        width: $cardWidthXL;
+    }
+
+    .project-card {
+        width: $cardWidthXL;
+        height: cardHeight($cardWidthXL);
+        margin-top: calc($langSideXL/2.5);
+
+    }
+
+    .button-project {
+        height: calc(0.2 * cardHeight($cardWidthXL));
+        width: calc(0.25 * $cardWidthXL);
+        font-size: 0.04 * $cardWidthXL;
+        margin-left: $langSideXL * 0.5;
+    }
+
+    .lang-used {
+        height: $langSideXL;
+        width: $langSideXL;
+    }
+
+    .project-name {
+        margin-left: $langSideXL * 0.5;
+        font-size: calc(0.05 * $cardWidthXL);
+    }
+
+    .lang-used.item-1 {
+        margin-left: calc($langSideXL * 0.5);
+    }
+    
+    .lang-used.item-2 {
+        margin-left: calc($langSideXL * 2);
+    }
+    
+    .lang-used.item-3 {
+        margin-left: calc($langSideXL * 3.5);
+    }
+    
+    .lang-used.item-4 {
+        margin-left: calc($langSideXL * 5);
+    }
+}
+
+// XX-Large devices (larger desktops, 1900px and up)
+@media (min-width: 1900px) {
+    .grid-container-portfolio {
+        grid-template-columns: repeat(5, $cardWidthXXL);
+        grid-template-rows: containerHeight($cardWidthXXL, $langSideXXL);
+    }
+
+    .project-card-container {
+        //height is defined by project-card height + the part of the lang-used out of the box
+        height: containerHeight($cardWidthXXL, $langSideXXL);
+        width: $cardWidthXXL;
+    }
+
+    .project-card {
+        width: $cardWidthXXL;
+        height: cardHeight($cardWidthXXL);
+        margin-top: calc($langSideXXL/2.5);
+
+    }
+
+    .button-project {
+        height: calc(0.2 * cardHeight($cardWidthXXL));
+        width: calc(0.25 * $cardWidthXXL);
+        font-size: 0.04 * $cardWidthXXL;
+        margin-left: $langSideXXL * 0.5;
+    }
+
+    .lang-used {
+        height: $langSideXXL;
+        width: $langSideXXL;
+    }
+
+    .project-name {
+        margin-left: $langSideXXL * 0.5;
+        font-size: calc(0.05 * $cardWidthXXL);
+    }
+
+    .lang-used.item-1 {
+        margin-left: calc($langSideXXL * 0.5);
+    }
+    
+    .lang-used.item-2 {
+        margin-left: calc($langSideXXL * 2);
+    }
+    
+    .lang-used.item-3 {
+        margin-left: calc($langSideXXL * 3.5);
+    }
+    
+    .lang-used.item-4 {
+        margin-left: calc($langSideXXL * 5);
+    }
+}
