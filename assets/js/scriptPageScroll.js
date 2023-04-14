@@ -2,7 +2,7 @@
 $(function() {
   $.scrollify({
       section : ".section",
-      easing: "easeOutCubic",
+      easing: "easeOutExpo",
       scrollSpeed: 600,
   });
 });
