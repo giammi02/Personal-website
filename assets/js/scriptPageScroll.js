@@ -2,8 +2,9 @@
 $(function() {
   $.scrollify({
       section : ".section",
-      easing: "easeOutExpo",
+      easing: "easeOutBounce",
       scrollSpeed: 100,
+      touchScroll: false,
   });
 });
 
