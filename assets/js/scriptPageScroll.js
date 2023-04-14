@@ -4,8 +4,13 @@ $(function() {
       section : ".section",
       easing: "easeOutBounce",
       scrollSpeed: 100,
-      touchScroll: false,
-  });
+      afterResize: function() {
+      if( $(window).width() < 768) {
+        $.scrollify.disable()
+      }else{
+        $.scrollify.enable()
+      }
+      },  });
 });
 
 
