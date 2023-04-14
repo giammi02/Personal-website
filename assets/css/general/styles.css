@@ -2,13 +2,14 @@
   position: absolute;
   justify-items: center;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 100vw;
   grid-column-gap: 20px;
   grid-row-gap: 40px;
   background-color: #5DEEAC;
 }
 
 .section {
-  padding-top: 70px;
+  padding-top: 80px;
   min-height: 100vh;
-}
+  width: 100vw;
+}/*# sourceMappingURL=styles.css.map */

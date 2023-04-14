@@ -4,33 +4,103 @@ $thirdColor: rgb(139, 131, 167);
 $primaryFont: "Lucida Sans Typewriter";
 $fontStack: "Rockwell Extra Bold,Rockwell Bold,monospace";
 
-.content-container
-{
-    position:absolute;
-
-    justify-items: center;
-    display:grid;
-    grid-template-columns: 1fr ;    
-    grid-column-gap: 20px;
-    grid-row-gap: 40px;
-
-    background-color: $secondColor;
-
-}
-
 .home-page{
-
-}
-.text-container
-{
+    background-color: greenyellow;
+  }
+  
+  .text-container {
+    margin-right: 5vw;
+    margin-left: 5vw;
     font-size: 1.5em;
     text-align: justify;
+    color: rgb(139, 131, 167);
 
-    color:$thirdColor;
+    a{
+        text-decoration: none;
+        color: rgb(66, 66, 66);
+    }
+
+  }
+
+  .bio-1{
+    text-transform: uppercase;
+    animation: bio-1 1.5s;
+  }
+
+  .bio-2{
+    opacity: 0;
+    animation: bio-2 1.5s forwards;
+    animation-delay: 1.5s;
+  }
+
+  .bio-3{
+    opacity: 0;
+    animation: bio-3 1.5s forwards;
+    animation-delay: 3s;
+  }
+
+  .bio-4{
+    opacity: 0;
+    animation: bio-4 1.5s forwards;
+    animation-delay: 4.5s;  
 }
 
-.personal-img
-{
-    height: 300px,;
-}
+  .bio-5{
+    opacity: 0;
+    animation: bio-5 1.5s forwards;
+    animation-delay: 8s;  
+  }
+
+  @keyframes bio-1 {
+    from{
+        transform: translateY(-20vw);
+        opacity: 0;
+    }
+  }
+
+  @keyframes bio-2 {
+
+    from{
+        transform: translateX(-20vw);
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+
+  }
+
+  @keyframes bio-3 {
+    from{
+        transform: translateY(20vw);
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+  }
+
+  @keyframes bio-4 {
+    from{
+        transform: translateY(20vw);
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+  }
+
+  @keyframes bio-5 {
+    from{
+        transform: translateY(20vw);
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+  }
+
 

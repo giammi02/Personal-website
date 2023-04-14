@@ -3,7 +3,7 @@ $(function() {
   $.scrollify({
       section : ".section",
       easing: "easeOutExpo",
-      scrollSpeed: 600,
+      scrollSpeed: 100,
   });
 });
 
