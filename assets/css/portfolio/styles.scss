@@ -1,21 +1,21 @@
 $secondcolor: lightgreen;
 
-$cardWidthXS: 90vw;
+$cardWidthXS: 90vw;  //1 per line
 $langSideXS: 0.125 * $cardWidthXS;
 
-$cardWidthS: 45vw;
+$cardWidthS: 45vw;  //2 per line
 $langSideS: 0.125 * $cardWidthS;
 
 $cardWidthM: 45vw;
 $langSideM: 0.125 * $cardWidthM;
 
-$cardWidthL: 30vw;
+$cardWidthL: 30vw; //3 per line 
 $langSideL: 0.1 * $cardWidthL;
 
-$cardWidthXL: 22.5vw;
+$cardWidthXL: 26vw; //3 per line (80vw space center)
 $langSideXL: 0.1 * $cardWidthXL;
 
-$cardWidthXXL: 18vw;
+$cardWidthXXL: 19.25vw; //4 per line
 $langSideXXL: 0.1 * $cardWidthXXL;
 
 
@@ -43,11 +43,11 @@ $langSideXXL: 0.1 * $cardWidthXXL;
 .grid-container-portfolio {
     display: grid;
     grid-template-columns: $cardWidthXS;
-    grid-template-rows: containerHeight($cardWidthXS, $langSideXS);
+    grid-auto-rows: containerHeight($cardWidthXS, $langSideXS);
     justify-content: center;
 
     margin-top: 40px;
-    gap: 30px;
+    gap: 1vw;
 }
 
 .project-card-container {
@@ -86,14 +86,12 @@ $langSideXXL: 0.1 * $cardWidthXXL;
     font-size: calc(0.05 * $cardWidthXS);
     color: white;
     font-weight: bold;
-
 }
 
 .button-project {
     position: relative;
     margin-bottom: 30px;
     margin-left: $langSideXS * 0.5;
-
 
     border: none;
     height: calc(0.2 * cardHeight($cardWidthXS));
@@ -164,7 +162,7 @@ $langSideXXL: 0.1 * $cardWidthXXL;
 @media (min-width: 576px) {
     .grid-container-portfolio {
         grid-template-columns: repeat(2, $cardWidthS);
-        grid-template-rows: containerHeight($cardWidthS, $langSideS);
+        grid-auto-rows: containerHeight($cardWidthS, $langSideS);
     }
 
     .project-card-container {
@@ -223,7 +221,7 @@ $langSideXXL: 0.1 * $cardWidthXXL;
 
     .grid-container-portfolio {
         grid-template-columns: repeat(3, $cardWidthL);
-        grid-template-rows: containerHeight($cardWidthL, $langSideL);
+        grid-auto-rows: containerHeight($cardWidthL, $langSideL);
     }
 
     .project-card-container {
@@ -276,8 +274,8 @@ $langSideXXL: 0.1 * $cardWidthXXL;
 // X-Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
     .grid-container-portfolio {
-        grid-template-columns: repeat(4, $cardWidthXL);
-        grid-template-rows: containerHeight($cardWidthXL, $langSideXL);
+        grid-template-columns: repeat(3, $cardWidthXL);
+        grid-auto-rows: containerHeight($cardWidthXL, $langSideXL);
     }
 
     .project-card-container {
@@ -330,8 +328,8 @@ $langSideXXL: 0.1 * $cardWidthXXL;
 // XX-Large devices (larger desktops, 1900px and up)
 @media (min-width: 1900px) {
     .grid-container-portfolio {
-        grid-template-columns: repeat(5, $cardWidthXXL);
-        grid-template-rows: containerHeight($cardWidthXXL, $langSideXXL);
+        grid-template-columns: repeat(4, $cardWidthXXL);
+        grid-auto-rows: containerHeight($cardWidthXXL, $langSideXXL);
     }
 
     .project-card-container {

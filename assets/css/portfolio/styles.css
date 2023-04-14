@@ -7,10 +7,10 @@
 .grid-container-portfolio {
   display: grid;
   grid-template-columns: 90vw;
-  grid-template-rows: 56.25vw;
+  grid-auto-rows: 56.25vw;
   justify-content: center;
   margin-top: 40px;
-  gap: 30px;
+  gap: 1vw;
 }
 
 .project-card-container {
@@ -103,7 +103,7 @@
 @media (min-width: 576px) {
   .grid-container-portfolio {
     grid-template-columns: repeat(2, 45vw);
-    grid-template-rows: 28.125vw;
+    grid-auto-rows: 28.125vw;
   }
   .project-card-container {
     height: 28.125vw;
@@ -144,7 +144,7 @@
 @media (min-width: 992px) {
   .grid-container-portfolio {
     grid-template-columns: repeat(3, 30vw);
-    grid-template-rows: 18.375vw;
+    grid-auto-rows: 18.375vw;
   }
   .project-card-container {
     height: 18.375vw;
@@ -184,83 +184,83 @@
 }
 @media (min-width: 1200px) {
   .grid-container-portfolio {
-    grid-template-columns: repeat(4, 22.5vw);
-    grid-template-rows: 13.78125vw;
+    grid-template-columns: repeat(3, 26vw);
+    grid-auto-rows: 15.925vw;
   }
   .project-card-container {
-    height: 13.78125vw;
-    width: 22.5vw;
+    height: 15.925vw;
+    width: 26vw;
   }
   .project-card {
-    width: 22.5vw;
-    height: 12.65625vw;
-    margin-top: 0.9vw;
+    width: 26vw;
+    height: 14.625vw;
+    margin-top: 1.04vw;
   }
   .button-project {
-    height: 2.53125vw;
-    width: 5.625vw;
-    font-size: 0.9vw;
-    margin-left: 1.125vw;
+    height: 2.925vw;
+    width: 6.5vw;
+    font-size: 1.04vw;
+    margin-left: 1.3vw;
   }
   .lang-used {
-    height: 2.25vw;
-    width: 2.25vw;
+    height: 2.6vw;
+    width: 2.6vw;
   }
   .project-name {
-    margin-left: 1.125vw;
-    font-size: 1.125vw;
+    margin-left: 1.3vw;
+    font-size: 1.3vw;
   }
   .lang-used.item-1 {
-    margin-left: 1.125vw;
+    margin-left: 1.3vw;
   }
   .lang-used.item-2 {
-    margin-left: 4.5vw;
+    margin-left: 5.2vw;
   }
   .lang-used.item-3 {
-    margin-left: 7.875vw;
+    margin-left: 9.1vw;
   }
   .lang-used.item-4 {
-    margin-left: 11.25vw;
+    margin-left: 13vw;
   }
 }
 @media (min-width: 1900px) {
   .grid-container-portfolio {
-    grid-template-columns: repeat(5, 18vw);
-    grid-template-rows: 11.025vw;
+    grid-template-columns: repeat(4, 19.25vw);
+    grid-auto-rows: 11.790625vw;
   }
   .project-card-container {
-    height: 11.025vw;
-    width: 18vw;
+    height: 11.790625vw;
+    width: 19.25vw;
   }
   .project-card {
-    width: 18vw;
-    height: 10.125vw;
-    margin-top: 0.72vw;
+    width: 19.25vw;
+    height: 10.828125vw;
+    margin-top: 0.77vw;
   }
   .button-project {
-    height: 2.025vw;
-    width: 4.5vw;
-    font-size: 0.72vw;
-    margin-left: 0.9vw;
+    height: 2.165625vw;
+    width: 4.8125vw;
+    font-size: 0.77vw;
+    margin-left: 0.9625vw;
   }
   .lang-used {
-    height: 1.8vw;
-    width: 1.8vw;
+    height: 1.925vw;
+    width: 1.925vw;
   }
   .project-name {
-    margin-left: 0.9vw;
-    font-size: 0.9vw;
+    margin-left: 0.9625vw;
+    font-size: 0.9625vw;
   }
   .lang-used.item-1 {
-    margin-left: 0.9vw;
+    margin-left: 0.9625vw;
   }
   .lang-used.item-2 {
-    margin-left: 3.6vw;
+    margin-left: 3.85vw;
   }
   .lang-used.item-3 {
-    margin-left: 6.3vw;
+    margin-left: 6.7375vw;
   }
   .lang-used.item-4 {
-    margin-left: 9vw;
+    margin-left: 9.625vw;
   }
 }/*# sourceMappingURL=styles.css.map */

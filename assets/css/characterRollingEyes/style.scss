@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.character-rolling-eyes{
+    position: fixed;
+    z-index: 20;
+    display: inline-block;
+
+    bottom: -140px;
+    left: 3vw;
+
+
+    height: 300px;
+    width:130px;
+
+    background-image: url(/assets/img/character2.webp);
+    background-size: 100%;
+
+    transition-duration: 0.4s;
+
+}
+
+.character-rolling-eyes:hover{
+    transform: translateY(-80px);
+
+    transition-duration: 0.4s;
+}
+.character-eye{
+    background-image: url(/assets/img/eye.png);
+    background-size: 100%;
+
+    
+    height: 45x;
+    width:45px;
+
+
+    bottom: 180px;
+    left: 5vw;
+
+}

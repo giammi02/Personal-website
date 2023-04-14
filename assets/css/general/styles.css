@@ -1,0 +1,14 @@
+.content-container {
+  position: absolute;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 40px;
+  background-color: #5DEEAC;
+}
+
+.section {
+  padding-top: 70px;
+  min-height: 100vh;
+}/*# sourceMappingURL=styles.css.map */

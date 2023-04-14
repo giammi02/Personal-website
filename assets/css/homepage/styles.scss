@@ -1,0 +1,36 @@
+$primaryColor: rgba(25, 185, 105, 0.6);// rgb(10,20,45); 
+$secondColor: #5DEEAC;
+$thirdColor: rgb(139, 131, 167);
+$primaryFont: "Lucida Sans Typewriter";
+$fontStack: "Rockwell Extra Bold,Rockwell Bold,monospace";
+
+.content-container
+{
+    position:absolute;
+
+    justify-items: center;
+    display:grid;
+    grid-template-columns: 1fr ;    
+    grid-column-gap: 20px;
+    grid-row-gap: 40px;
+
+    background-color: $secondColor;
+
+}
+
+.home-page{
+
+}
+.text-container
+{
+    font-size: 1.5em;
+    text-align: justify;
+
+    color:$thirdColor;
+}
+
+.personal-img
+{
+    height: 300px,;
+}
+

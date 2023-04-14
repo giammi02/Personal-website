@@ -10,18 +10,18 @@ html {
 }
 
 body {
-  background-color: rgba(25, 185, 105, 0.6);
+  background-color: rgb(25, 185, 105);
   color: #5DEEAC;
 }
 
 /* Mobiles */
 .nav-container {
   width: 100%;
-  position: absolute;
-  z-index: 1;
+  position: fixed;
+  z-index: 20;
   display: flex;
   justify-content: center;
-  background-color: rgba(25, 185, 105, 0.6);
+  background-color: rgb(25, 185, 105);
 }
 
 .prova {
@@ -107,27 +107,6 @@ body {
 .icon:hover,
 .icon:active {
   background-color: transparent;
-}
-
-.content-container {
-  position: absolute;
-  margin-top: 70px;
-  justify-items: center;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-column-gap: 20px;
-  grid-row-gap: 40px;
-  background-color: #5DEEAC;
-}
-
-.text-container {
-  font-size: 1.5em;
-  text-align: justify;
-  color: rgb(139, 131, 167);
-}
-
-.personal-img {
-  height: 300px;
 }
 
 /* desktops */

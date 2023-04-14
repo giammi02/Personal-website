@@ -1,0 +1,15 @@
+.home-page{
+  background-color: greenyellow;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.text-container {
+  font-size: 1.5em;
+  text-align: justify;
+  color: rgb(139, 131, 167);
+}
+
+.personal-img {
+  height: 300px;
+}/*# sourceMappingURL=styles.css.map */

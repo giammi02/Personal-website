@@ -1,5 +1,5 @@
 /*$primaryColor: rgb(114,102,216); */
-$primaryColor: rgba(25, 185, 105, 0.6);// rgb(10,20,45); 
+$primaryColor: rgba(25, 185, 105);// rgb(10,20,45); 
 $secondColor: #5DEEAC;
 $thirdColor: rgb(139, 131, 167);
 $primaryFont: "Lucida Sans Typewriter";
@@ -30,8 +30,8 @@ body
 .nav-container
 {
 width: 100%;
-position: absolute;
-z-index: 1;
+position: fixed;
+z-index: 20;
 
 display: flex;
 justify-content: center;
@@ -46,6 +46,8 @@ background-color: $primaryColor;
     z-index: 0;
     margin-top: 80px;
 }
+
+
 
 .main-nav
 {
@@ -78,6 +80,7 @@ background-color: $primaryColor;
         margin-top: 20px;
     }
 }
+
 .mobile-menu-button-container
 {
     width: 50%;
@@ -144,47 +147,11 @@ background-color: $primaryColor;
 {
     background-color: transparent;
 }
-// ***** END OF NAVIGATION BAR STYLE *****
-
-
-.content-container
-{
-    position:absolute;
-    margin-top: 70px;
-
-    justify-items: center;
-    display:grid;
-
-    grid-template-columns: 1fr ;
-    grid-column-gap: 20px;
-    grid-row-gap: 40px;
-
-    background-color: $secondColor;
-
-}
-.text-container
-{
-    font-size: 1.5em;
-    text-align: justify;
-
-    color:$thirdColor;
-}
-.grid-item
-{
-}
-.personal-img
-{
-    height: 300px,;
-}
-
-
 
 
 /* desktops */
 @media only screen and (min-width:960px) 
 {
-
-// ***** NAVIGATION BAR STYLE *****
 
 .nav-1
 {

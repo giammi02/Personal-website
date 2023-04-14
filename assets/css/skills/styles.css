@@ -6,6 +6,7 @@
 
 .grid-container-skills {
   display: grid;
+  top: 70px;
   grid-template-columns: 80vw;
   grid-auto-rows: 80vw;
   justify-content: center;
@@ -71,37 +72,37 @@
 }
 
 .bg-javascript {
-  background-image: url(javascript.png);
+  background-image: url(/assets/img/languages/javascript.png);
 }
 
 .bg-c-sharp {
-  background-image: url(c-sharp.png);
+  background-image: url(/assets/img/languages/C-sharp.png);
 }
 
 .bg-java {
-  background-image: url(java.png);
+  background-image: url(/assets/img/languages/java.png);
 }
 
 .bg-html {
-  background-image: url(html.png);
+  background-image: url(/assets/img/languages/html.png);
 }
 
 .bg-css {
-  background-image: url(css.png);
+  background-image: url(/assets/img/languages/css.png);
 }
 
 .bg-sql {
-  background-image: url(sql.png);
+  background-image: url(/assets/img/languages/sql.png);
 }
 
-.bg-sql {
-  background-image: url(sass.png);
+.bg-sass {
+  background-image: url(/assets/img/languages/sass.png);
 }
 
 @media (min-width: 768px) {
   .grid-container-skills {
-    grid-template-columns: repeat(2, 45vw);
-    grid-auto-rows: 45vw;
+    grid-template-columns: repeat(2, 40vw);
+    grid-auto-rows: 40vw;
   }
   .dot {
     height: 3vw;
