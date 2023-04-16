@@ -2,17 +2,17 @@
 $(function() {
   $.scrollify({
       section : ".section",
-      easing: "easeOutBounce",
+      sectionName: false,
+      easing: "easeOutExpo",
       scrollSpeed: 100,
-      afterResize: function() {
-      if( $(window).width() < 768) {
-        $.scrollify.disable()
-      }else{
-        $.scrollify.enable()
-      }
-      },  });
+
 });
 
+if( $(window).width() < 768) {
+  $.scrollify.disable()
+}else{
+  $.scrollify.enable()
+}})
 
 /*
 $('.link').click(function(){

@@ -5,7 +5,6 @@
     grid-template-columns: 100vw;
     grid-column-gap: 20px;
     grid-row-gap: 40px;
-    background-color: #5DEEAC;
   }
 
 .section{
@@ -13,3 +12,23 @@
     min-height: 100vh;
     width: 100vw;
 }
+
+.fixed-bg{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right:0;
+  background-image: url(/assets/img/bg-blue-vertical.svg);
+  background-size: 100%;
+  z-index: 0;
+}
+
+  //Large devices (desktops, 992px and up)
+  @media only screen and (min-width:992px) {
+    .fixed-bg{
+
+      background-image: url(/assets/img/bg-blue.svg);
+
+    }
+  }

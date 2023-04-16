@@ -1,7 +1,7 @@
 /*$primaryColor: rgb(114,102,216); */
-$primaryColor: rgba(25, 185, 105);// rgb(10,20,45); 
-$secondColor: #5DEEAC;
-$thirdColor: rgb(139, 131, 167);
+$primaryColor: rgba(0, 0, 0, 0.5);//// rgb(10,20,45); 
+$secondColor: #5DEEAC; //#5DEEAC
+$thirdColor: rgb(240,240,240);// rgb(80, 80, 80);
 $primaryFont: "Lucida Sans Typewriter";
 $fontStack: "Rockwell Extra Bold,Rockwell Bold,monospace";
 
@@ -151,6 +151,11 @@ background-color: $primaryColor;
 @media only screen and (min-width:960px) 
 {
 
+    .main-nav
+    {
+        width: 90vw;
+    }
+
 .nav-1
 {
     display: flex;
@@ -220,7 +225,7 @@ background-color: $primaryColor;
 }
 
 
-/* large screens */
+// X-Large devices (large desktops, 1200px and up)
 @media only screen and (min-width: 1200px) 
 {
     .main-nav

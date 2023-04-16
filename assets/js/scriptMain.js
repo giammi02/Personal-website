@@ -51,6 +51,7 @@ function expandMenu()
     //expand menu
     mainMenu.style.cssText = `
     height: 300px;
+    background-color: rgba(0, 0, 0);
     `;
 
     menuButton.innerText = "Close";
@@ -59,7 +60,8 @@ function expandMenu()
     else
     {
         mainMenu.style.cssText = `
-        height: 70px;   
+        height: 70px;
+        background-color: rgba(0, 0, 0, 0.5);   
         `;
 
         menuButton.innerText = "Menu";

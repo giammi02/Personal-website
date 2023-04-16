@@ -19,7 +19,7 @@
     height: 100%;
     width: 100%;
     
-    background-color: white;
+    background-color: transparent;
     overflow: hidden;
 }
 
@@ -58,7 +58,6 @@
     width: 100%;
     display: flex;
     align-items: center;
-    background-color: white;
 }
 
 .dot{
@@ -74,7 +73,6 @@
 .half-dot{
     width: 50%;
     height: 100%;
-    background-color: white;
     margin-left: 50%;
 }
 
@@ -141,7 +139,15 @@ background-image: url(/assets/img/languages/javascript.png);
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+    .dot{
+        height: 2vw;
+        width: 2vw;
+
+        margin: 1.5vw;
+
+    }
+}
 
 // X-Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {}

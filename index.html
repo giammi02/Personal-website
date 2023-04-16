@@ -4,7 +4,7 @@
 <head>
   <!-- meta tags -->
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 
   <!-- css -->
   <link href="/assets/css/navbar/styles.css" rel="stylesheet">
@@ -36,9 +36,9 @@
         <a href="#"><img src="/assets/img/Logo_dev_transp.png" id="logo"></a>
       </div>
       <div data-nav2 class="nav-2">
-        <a href="#"> Home</a>
-        <a href="#"> Skills</a>
-        <a href="#"> Portfolio </a>
+        <a href="#home-page"> Home</a>
+        <a href="#skills"> Skills</a>
+        <a href="#portfolio"> Portfolio </a>
         <a href="#"> Contact </a>
       </div>
       </div>
@@ -57,22 +57,24 @@
 
   </header>
 
+  <div class="fixed-bg"> </div>
   <div class="content-container">
-    <div class="section home-page">
+    <div class="section home-page" id="home-page">
       <div class="text-container">
-        <p class="bio bio-1"> Welcome to my website </p>
-        <p class="bio bio-2"> I'm Gianmarco Gioia </p>
-        <p class="bio bio-3"> I'm a junior back-end delevoper with front-end skills</p>
-        <p class="bio bio-4"> Currently studying computer science (1st year) at <a href="https://www.unicam.it/"> University of Camerino</a> and attending <a href="https://www.unicam.it/"> Start2Impact</a> course to improve my coding skills</p>
-        <p class="bio bio-5"> Looking for a part-time job to do while i finish my studies</p>
-
+        <p class="bio bio-1"> Welcome to my website! </p>
+        <p class="bio bio-2"> I am Gianmarco Gioia </p>
+        <p class="bio bio-3"> Junior back-end delevoper with front-end skills</p>
+        <!--<p class="bio bio-4"> Currently studying computer science (1st year) at <a href="https://www.unicam.it/"> University of Camerino</a> and attending <a href="https://www.unicam.it/"> Start2Impact</a> course to improve my coding skills</p> -->
+        <p class="bio bio-4"> I am currently looking for a part-time job while i finish my studies</p>
+        <p class="bio bio-5"> If you are interested in working with me</p>
+        <a href="google.it"><button class="button-contact"> Contact me </button></a>
       </div>
     </div>
 
 
     <!--<h2> HARD SKILLS </h2>-->
     <!-- SKILLS -->
-    <div class="section grid-container-skills">
+    <div class="section grid-container-skills" id="skills">
       <div class="skills-card">
         <div class="skill-line item-1">
           <div class="skill-name bg-javascript">
@@ -194,7 +196,7 @@
     </div>
     <!-- END SKILLS CARD-->
 
-    <div class="section grid-container-portfolio">
+    <div class="section grid-container-portfolio" id="portfolio">
       <!-- PROJECT CARD ITEM-->
       <div class="project-card-container">
         <div class="lang-used item-1"></div>
@@ -249,11 +251,11 @@
     <!-- END MAIN CONTENT-->
   </div>
   </div>
-  <!--
+  
   <div class="character-rolling-eyes">
     <div class="character-eye"> </div>
     <div class="character-eye"> </div>
--->
+
 
   <!-- FOOTER -->
   <footer>
@@ -263,26 +265,26 @@
   <script src="assets/js/scriptPageScroll.js">  </script>
 
 
-
-  <!-- JQUERY 3.6.4 -->
+  <!--
+   JQUERY 3.6.4 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
     integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<!--    Easing functions plugin -->
+   Easing functions plugin 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
     integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-  <!-- scrollify -->
+
+   scrollify 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js"
     integrity="sha512-UyX8JsMsNRW1cYl8BoxpcamonpwU2y7mSTsN0Z52plp7oKo1u92Xqfpv6lOlTyH3yiMXK+gU1jw0DVCsPTfKew=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+  -->
 
 
   <script src="assets/js/scriptPageScroll.js">  </script> 
-*/
 </body>
 
 </html>

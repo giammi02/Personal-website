@@ -5,16 +5,16 @@ $primaryFont: "Lucida Sans Typewriter";
 $fontStack: "Rockwell Extra Bold,Rockwell Bold,monospace";
 
 .home-page{
-    background-color: greenyellow;
+
+
   }
   
   .text-container {
     margin-right: 5vw;
     margin-left: 5vw;
     font-size: 1.5em;
-    text-align: justify;
-    color: rgb(139, 131, 167);
-
+    color: rgb(240,240,240);
+    font-family:'Courier New', Courier, "Andale Mono";
     a{
         text-decoration: none;
         color: rgb(66, 66, 66);
@@ -22,34 +22,62 @@ $fontStack: "Rockwell Extra Bold,Rockwell Bold,monospace";
 
   }
 
+  .bio-1, 
+  .bio-2{
+
+  }
+  .bio-3,
+  .bio-4
+  {
+    text-align: center;
+
+  }
+
   .bio-1{
+    font-weight: 1000;
+    font-size: 1.1em;
     text-transform: uppercase;
     animation: bio-1 1.5s;
   }
 
   .bio-2{
+    font-size: 1em;
     opacity: 0;
+
     animation: bio-2 1.5s forwards;
     animation-delay: 1.5s;
   }
 
   .bio-3{
+    margin-top: 5vh;
+
+    font-size: 1em;
     opacity: 0;
+
     animation: bio-3 1.5s forwards;
     animation-delay: 3s;
   }
 
   .bio-4{
+    margin-top: 5vh;
+
+    font-size: 0.8em;
     opacity: 0;
+
     animation: bio-4 1.5s forwards;
     animation-delay: 4.5s;  
 }
 
-  .bio-5{
-    opacity: 0;
-    animation: bio-5 1.5s forwards;
-    animation-delay: 8s;  
-  }
+.bio-5{
+  margin-top: 5vh;
+
+  font-size: 0.8em;
+  opacity: 0;
+
+  animation: bio-5 1.5s forwards;
+  animation-delay: 6s;  
+}
+
 
   @keyframes bio-1 {
     from{
@@ -98,9 +126,22 @@ $fontStack: "Rockwell Extra Bold,Rockwell Bold,monospace";
         transform: translateY(20vw);
         opacity: 0;
     }
+
     to{
         opacity: 1;
     }
   }
 
+  //Large devices (desktops, 992px and up)
+  @media only screen and (min-width:992px) {
 
+  }
+
+    // X-Large devices (large desktops, 1200px and up) (extended navbar with 80vw width)
+  @media only screen and (min-width:1200px) {
+    .text-container{
+      margin-right: 10vw;
+      margin-left: 10vw;
+    }
+
+  }

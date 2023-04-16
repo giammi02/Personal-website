@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background-color: rgb(25, 185, 105);
+  background-color: rgba(0, 0, 0, 0.5);
   color: #5DEEAC;
 }
 
@@ -21,7 +21,7 @@ body {
   z-index: 20;
   display: flex;
   justify-content: center;
-  background-color: rgb(25, 185, 105);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .prova {
@@ -63,7 +63,7 @@ body {
 .mobile-menu-button-container .button {
   background: transparent;
   border: none;
-  color: rgb(139, 131, 167);
+  color: rgb(240, 240, 240);
   cursor: pointer;
   height: 30px;
   font-size: 1.25em;
@@ -83,7 +83,7 @@ body {
 .nav-2 a {
   text-decoration: none;
   text-transform: uppercase;
-  color: rgb(139, 131, 167);
+  color: rgb(240, 240, 240);
   padding: 10px;
 }
 .nav-2 a:hover,
@@ -99,7 +99,7 @@ body {
 
 .icon {
   font-size: 1.5em;
-  color: rgb(139, 131, 167);
+  color: rgb(240, 240, 240);
   transition-duration: 0.4s;
   text-decoration: none;
 }
@@ -111,6 +111,9 @@ body {
 
 /* desktops */
 @media only screen and (min-width: 960px) {
+  .main-nav {
+    width: 90vw;
+  }
   .nav-1 {
     display: flex;
     width: 25%;
@@ -131,7 +134,7 @@ body {
     padding: 15px;
     text-transform: uppercase;
     transition: 0.3s;
-    color: rgb(139, 131, 167);
+    color: rgb(240, 240, 240);
   }
   .nav-2 a:hover {
     transform: translate(0, -5px);
@@ -149,7 +152,7 @@ body {
   .icon {
     font-size: 1.5em;
     margin-right: 20px;
-    color: rgb(139, 131, 167);
+    color: rgb(240, 240, 240);
     transition-duration: 0.4s;
     text-decoration: none;
   }
@@ -161,7 +164,6 @@ body {
     display: none;
   }
 }
-/* large screens */
 @media only screen and (min-width: 1200px) {
   .main-nav {
     width: 80vw;
