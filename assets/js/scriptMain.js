@@ -11,7 +11,7 @@ expandMenu();
 });
 
 
-let mediaQueryStart = window.matchMedia('(max-width: 859px)')
+let mediaQueryStart = window.matchMedia('(max-width: 959px)')
 if (mediaQueryStart.matches) 
         AdjustmentsMobile();
 
@@ -51,7 +51,7 @@ function expandMenu()
     //expand menu
     mainMenu.style.cssText = `
     height: 300px;
-    background-color: rgba(0, 0, 0);
+    background-color: rgb(0, 16, 28);
     `;
 
     menuButton.innerText = "Close";

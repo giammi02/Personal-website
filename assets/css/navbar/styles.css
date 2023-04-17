@@ -1,17 +1,7 @@
 /*$primaryColor: rgb(114,102,216); */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   background-color: rgba(0, 0, 0, 0.5);
-  color: #5DEEAC;
+  color: rgb(240, 240, 240);
 }
 
 /* Mobiles */

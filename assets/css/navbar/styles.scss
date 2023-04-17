@@ -5,22 +5,11 @@ $thirdColor: rgb(240,240,240);// rgb(80, 80, 80);
 $primaryFont: "Lucida Sans Typewriter";
 $fontStack: "Rockwell Extra Bold,Rockwell Bold,monospace";
 
-*
-{
-box-sizing: border-box;
-margin: 0;
-padding: 0;
-}
-
-html
-{
-scroll-behavior: smooth;
-}
 
 body
 {
     background-color: $primaryColor;
-    color: $secondColor;
+    color: $thirdColor;
 }
 
 
