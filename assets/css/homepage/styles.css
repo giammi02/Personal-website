@@ -11,6 +11,7 @@
   font-size: 1.5em;
   color: rgb(240, 240, 240);
   font-family: "Courier New", Courier, "Andale Mono";
+  text-align: center;
 }
 
 .personal-img-container {
@@ -40,13 +41,6 @@
   border-radius: 50%;
   background-image: url("/assets/img/img_me.jpeg");
   background-size: cover;
-}
-
-.bio-1,
-.bio-2,
-.bio-3,
-.bio-4 {
-  text-align: center;
 }
 
 .bio-1 {
@@ -85,6 +79,25 @@
   opacity: 0;
   animation: bio-5 1.5s forwards;
   animation-delay: 6s;
+}
+
+.bio-6 img {
+  margin-top: 5vw;
+  width: 25vw;
+}
+.bio-6 button {
+  position: relative;
+  width: 20vw;
+  min-width: 100px;
+  height: 10vw;
+  min-height: 50px;
+  bottom: 8vw;
+  font-family: "Courier New", Courier, "Andale Mono";
+  font-weight: 700;
+  color: rgb(240, 240, 240);
+  border: none;
+  border-radius: 10%;
+  background-color: rgb(255, 20, 147);
 }
 
 @keyframes bio-1 {
@@ -146,14 +159,33 @@
   .bg-blob {
     height: 38vw;
   }
-  .personal-img {
+  .personal-img-container {
+    height: 50vw;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .personal-img-container {
     position: absolute;
-    z-index: 2;
-    height: 38vw;
-    width: 38vw;
-    border-radius: 50%;
-    background-image: url("/assets/img/img_me.jpeg");
-    background-size: cover;
+    width: 50vw;
+    height: 40vw;
+    right: 0;
+    margin: 0;
+  }
+  .personal-img {
+    height: 22vw;
+    width: 22vw;
+  }
+  .bg-blob {
+    height: 27vw;
+  }
+  .bio-3 {
+    margin-top: 12vw;
+  }
+  .bio-3,
+  .bio-4,
+  .bio-5,
+  .bio-6 {
+    width: 50vw;
   }
 }
 @media only screen and (min-width: 1200px) {

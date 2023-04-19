@@ -1,33 +1,33 @@
 // ***** NAVIGATION BAR SCRIPT ***** //
 let mainMenu = document.querySelector("[data-mainMenu]");
 let menuButton = document.querySelector("[data-menubutton]");
-let nav2 = document.querySelector("[data-nav2");
-let nav3 = document.querySelector("[data-nav3");
+let icons = document.getElementsByClassName("icon");
+let nav2 = document.querySelector("[data-nav2]");
+let nav3 = document.querySelector("[data-nav3]");
 
 let isMenuExpanded = false;  //keep track of when menu is expanded or not
-menuButton.addEventListener("click", ()=>
-{
-expandMenu();
+menuButton.addEventListener("click", () => {
+    expandMenu();
 });
 
 
 let mediaQueryStart = window.matchMedia('(max-width: 959px)')
-if (mediaQueryStart.matches) 
-        AdjustmentsMobile();
+if (mediaQueryStart.matches)
+    AdjustmentsMobile();
 
-window.addEventListener("resize", ()=>{
+window.addEventListener("resize", () => {
     // Create a media condition that targets viewports at least 960px wide
     let mediaQuery = window.matchMedia('(min-width: 960px)');
     // Check if the media query matches
-    if (mediaQuery.matches) 
+    if (mediaQuery.matches)
         AdjustmentsDesktop();
     else
         AdjustmentsMobile();
-    })
+})
 
-    
 
-function AdjustmentsDesktop(){
+
+function AdjustmentsDesktop() {
     mainMenu.appendChild(nav3);
 
     mainMenu.style.cssText = `
@@ -36,7 +36,7 @@ function AdjustmentsDesktop(){
 
 }
 
-function AdjustmentsMobile(){
+function AdjustmentsMobile() {
     menuButton.innerText = "Menu";
 
     nav2.appendChild(nav3);
@@ -44,21 +44,22 @@ function AdjustmentsMobile(){
 
 
 //mobile menu visualizer
-function expandMenu()
-{
-    if(!isMenuExpanded){
+function expandMenu() {
+    if (!isMenuExpanded) {
         isMenuExpanded = true;
-    //expand menu
-    mainMenu.style.cssText = `
+        //fix icons appearing for a moment at the load of the site
+        for (let i = 0; i < icons.length; i++)
+            icons[i].style.cssText = `opacity: 1;`;
+        //expand menu
+        mainMenu.style.cssText = `
     height: 300px;
     background-color: rgb(0, 16, 28);
     `;
 
-    menuButton.innerText = "Close";
+        menuButton.innerText = "Close";
 
     }
-    else
-    {
+    else {
         mainMenu.style.cssText = `
         height: 70px;
         background-color: rgba(0, 0, 0, 0.5);   
@@ -66,7 +67,7 @@ function expandMenu()
 
         menuButton.innerText = "Menu";
 
-    isMenuExpanded = false;
+        isMenuExpanded = false;
     }
 
 }

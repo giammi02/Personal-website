@@ -1,13 +1,14 @@
 $primaryColor: rgba(25, 185, 105, 0.6);// rgb(10,20,45); 
 $secondColor: #5DEEAC;
 $thirdColor: rgb(139, 131, 167);
+$fontColor: rgb(240,240,240);
 $primaryFont: "Lucida Sans Typewriter";
-$fontStack: "Rockwell Extra Bold,Rockwell Bold,monospace";
+$fontStack: 'Courier New', Courier, "Andale Mono";
 
 .home-page{
   font-size: 1.5em;
-  color: rgb(240,240,240);
-  font-family:'Courier New', Courier, "Andale Mono";
+  color: $fontColor;
+  font-family: $fontStack;
   }
   
   .bio{
@@ -15,9 +16,9 @@ $fontStack: "Rockwell Extra Bold,Rockwell Bold,monospace";
     margin-left: 5vw;
     z-index: 1;
     font-size: 1.5em;
-    color: rgb(240,240,240);
-    font-family:'Courier New', Courier, "Andale Mono";
-
+    color: $fontColor;
+    font-family:$fontStack;
+    text-align: center;
   }
 
   .personal-img-container
@@ -56,14 +57,6 @@ $fontStack: "Rockwell Extra Bold,Rockwell Bold,monospace";
     background-size: cover;
   }
 
-  .bio-1, 
-  .bio-2,
-  .bio-3,
-  .bio-4
-  {
-    text-align: center;
-
-  }
 
   .bio-1{
     font-weight: 1000;
@@ -110,6 +103,26 @@ $fontStack: "Rockwell Extra Bold,Rockwell Bold,monospace";
   animation-delay: 6s;  
 }
 
+.bio-6{
+    img{
+      margin-top: 5vw;
+      width: 25vw;
+      }
+      button{
+        position: relative;
+        width: 20vw;
+        min-width: 100px;
+        height: 10vw;
+        min-height: 50px;
+        bottom: 8vw;
+        font-family: $fontStack ;
+        font-weight: 700;
+        color: $fontColor;
+        border: none;
+        border-radius: 10%;
+        background-color: rgb(255,20,147);
+      }
+}
 
   @keyframes bio-1 {
     from{
@@ -184,24 +197,42 @@ $fontStack: "Rockwell Extra Bold,Rockwell Bold,monospace";
   .bg-blob{
     height: 38vw;
   }
-  .personal-img{
-    position:absolute;
-    z-index: 2;
 
-    height: 38vw;
-    width: 38vw;
-
-    border-radius: 50%;
-    
-    background-image: url("/assets/img/img_me.jpeg");
-    background-size: cover;
+  .personal-img-container
+  {
+    height: 50vw;
   }
 }
 
 
   //Large devices (desktops, 992px and up)
   @media only screen and (min-width:992px) {
+    .personal-img-container
+    {
+      position: absolute;
+      width: 50vw;
+      height: 40vw;
+      right:0;
+      margin:0;
+    }
+    .personal-img{
+      height: 22vw;
+      width: 22vw;
+    }
+    .bg-blob{
+      height: 27vw;
+    }
 
+    .bio-3{
+      margin-top: 12vw;
+    }
+
+    .bio-3,
+    .bio-4,
+    .bio-5,
+    .bio-6{
+      width: 50vw;
+    }
   }
 
     // X-Large devices (large desktops, 1200px and up) (extended navbar with 80vw width)
@@ -210,5 +241,6 @@ $fontStack: "Rockwell Extra Bold,Rockwell Bold,monospace";
       margin-right: 10vw;
       margin-left: 10vw;
     }
+
 
   }
