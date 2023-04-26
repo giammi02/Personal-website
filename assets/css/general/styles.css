@@ -6,12 +6,11 @@
 
 html {
   scroll-behavior: smooth;
-  min-height: -webkit-fill-available;
 }
 
 body {
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
 }
 
 .content-container {
@@ -38,7 +37,6 @@ body {
   background-image: url(/assets/img/bg-blue-vertical.svg);
   background-size: 100%;
   z-index: 0;
-  min-height: -webkit-fill-available;
 }
 
 @media only screen and (min-width: 992px) {
