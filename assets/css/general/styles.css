@@ -16,11 +16,6 @@ body {
   -webkit-overflow-scrolling: auto;
 }
 
-.scroll {
-  overflow: auto;
-  height: 100%;
-}
-
 .content-container {
   position: absolute;
   justify-items: center;
