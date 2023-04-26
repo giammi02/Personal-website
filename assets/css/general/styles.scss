@@ -9,7 +9,20 @@ html
 {
 scroll-behavior: smooth;
 }
-body { height: 100vh; height: calc(var(--vh, 1vh) * 100); }
+html,
+body {
+ height: 100%;
+ margin: 0;
+ overflow: hidden;
+
+ -webkit-overflow-scrolling: auto;
+
+}
+.scroll {
+ overflow: auto;
+ height: 100%;
+}
+
 .content-container {
     position: absolute;
     justify-items: center;
