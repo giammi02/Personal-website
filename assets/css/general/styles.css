@@ -8,14 +8,6 @@ html {
   scroll-behavior: smooth;
 }
 
-html,
-body {
-  height: 100%;
-  margin: 0;
-  overflow: hidden;
-  -webkit-overflow-scrolling: auto;
-}
-
 .content-container {
   position: absolute;
   justify-items: center;
