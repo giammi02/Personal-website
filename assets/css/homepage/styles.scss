@@ -104,23 +104,38 @@ $fontStack: 'Courier New', Courier, "Andale Mono";
 }
 
 .bio-6{
+  display: flex;
+  justify-content: center;
+  align-items: center;
     img{
-      margin-top: 5vw;
       width: 25vw;
+      margin-bottom: 10vw;
+      margin-left: 3vw;
       }
-      button{
+      a  //contact button
+      {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
         position: relative;
         width: 20vw;
         min-width: 100px;
         height: 10vw;
         min-height: 50px;
-        bottom: 8vw;
         font-family: $fontStack ;
         font-weight: 700;
+        font-size: 0.5em;
         color: $fontColor;
-        border: none;
-        border-radius: 10%;
+        border-radius: 2vw;
         background-color: rgb(255,20,147);
+
+        transition-duration: 0.4s;
+      }
+
+      a:hover{
+        background-color: rgb(187, 20, 108);
+        transition-duration: 0.4s;
       }
 }
 
@@ -204,6 +219,16 @@ $fontStack: 'Courier New', Courier, "Andale Mono";
   }
 }
 
+ // Medium devices (tablets , 768px and up)
+@media (min-width: 768px) {
+.bio-6{
+  a{
+    font-size: 0.65em;
+  }
+}
+}
+
+
 
   //Large devices (desktops, 992px and up)
   @media only screen and (min-width:992px) {
@@ -233,14 +258,42 @@ $fontStack: 'Courier New', Courier, "Andale Mono";
     .bio-6{
       width: 50vw;
     }
-  }
 
+    .bio-6{
+      height: 20vw;
+      img{
+        margin-top: 5vw;
+        width: 10vw;
+        }
+        a
+        {
+          width: 12vw;
+          height: 5vw;
+          border-radius: 1vw;
+          font-size: 1.5vw;
+        }
+
+  }
+}
     // X-Large devices (large desktops, 1200px and up) (extended navbar with 80vw width)
   @media only screen and (min-width:1200px) {
-    .text-container{
-      margin-right: 10vw;
-      margin-left: 10vw;
+    .personal-img-container
+    {
+      height: 30vw;
     }
+
+    .bio-3{
+      margin-top: 8vw;
+    }
+
+    .personal-img{
+      height: 18vw;
+      width: 18vw;
+    }
+    .bg-blob{
+      height: 23vw;
+    }
+
 
 
   }
