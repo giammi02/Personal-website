@@ -1,6 +1,6 @@
 /*$primaryColor: rgb(114,102,216); */
 body {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 16, 28, 0.6);
   color: rgb(240, 240, 240);
 }
 
@@ -11,7 +11,8 @@ body {
   z-index: 20;
   display: flex;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 16, 28, 0.6);
+  transition-duration: 0.4s;
 }
 
 .prova {

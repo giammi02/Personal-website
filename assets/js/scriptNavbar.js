@@ -1,6 +1,6 @@
-// ***** NAVIGATION BAR SCRIPT ***** //
 let mainMenu = document.querySelector("[data-mainMenu]");
 let menuButton = document.querySelector("[data-menubutton]");
+let navbar = document.querySelector("[data-navbar]");
 let icons = document.getElementsByClassName("icon");
 let nav2 = document.querySelector("[data-nav2]");
 let nav3 = document.querySelector("[data-nav3]");
@@ -51,25 +51,36 @@ function expandMenu() {
         for (let i = 0; i < icons.length; i++)
             icons[i].style.cssText = `opacity: 1;`;
         //expand menu
-        mainMenu.style.cssText = `
-    height: 300px;
-    background-color: rgb(0, 16, 28);
-    `;
+        mainMenu.style.cssText = `height: 300px;`;
+        navbar.style.cssText = ` background-color: rgba(0, 16, 28); `
 
         menuButton.innerText = "Close";
 
     }
     else {
-        mainMenu.style.cssText = `
-        height: 70px;
-        background-color: rgba(0, 0, 0, 0.5);   
-        `;
-
+        mainMenu.style.cssText = `height: 70px;`;
+        navbar.style.cssText = ` background-color: rgba(0, 16, 28, 0.6); `
         menuButton.innerText = "Menu";
-
+        
         isMenuExpanded = false;
     }
 
 }
 
-// ***** END NAVIGATION BAR SCRIPT ***** //
+document.addEventListener("scroll", ()=>{
+
+    //make menu darker when user scroll (avoid confusion with text behind)
+    if(window.scrollY!=0)
+    navbar.style.cssText = ` background-color: rgba(0, 16, 28, 0.9); `
+    else
+    navbar.style.cssText = ` background-color: rgba(0, 16, 28, 0.6); `
+    
+    //fix menu button when user scroll
+    if(isMenuExpanded){
+        expandMenu();
+    }
+    
+})
+
+
+
