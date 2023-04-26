@@ -34,6 +34,7 @@ scroll-behavior: smooth;
   background-image: url(/assets/img/bg-blue-vertical.svg);
   background-size: 100%;
   z-index: 0;
+  min-height: -webkit-fill-available;
 }
 
   //Large devices (desktops, 992px and up)
