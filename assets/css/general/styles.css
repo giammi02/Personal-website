@@ -9,7 +9,7 @@ html {
 }
 
 .content-container {
-  position: absolute;
+  position: relative;
   justify-items: center;
   display: grid;
   grid-template-columns: 100vw;
@@ -20,7 +20,7 @@ html {
 .section {
   padding-top: 80px;
   min-height: 100vh;
-  width: 100vw;
+  width: 95vw;
 }
 
 .fixed-bg {
