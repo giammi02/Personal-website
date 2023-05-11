@@ -1,23 +1,27 @@
 $primaryColor: rgba(25, 185, 105, 0.6);// rgb(10,20,45); 
-$secondColor: #5DEEAC;
+$secondColor: rgb(187, 20, 108); //#5DEEAC;
 $thirdColor: rgb(139, 131, 167);
 $fontColor: rgb(240,240,240);
-$primaryFont: "Lucida Sans Typewriter";
+$primaryFont: stratosFont;
 $fontStack: 'Courier New', Courier, "Andale Mono";
 
+
+
 .home-page{
-  font-size: 1.5em;
   color: $fontColor;
-  font-family: $fontStack;
+  font-family: $primaryFont;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
   }
   
   .bio{
     margin-right: 5vw;
     margin-left: 5vw;
     z-index: 1;
-    font-size: 1.5em;
+    font-size: 6vw;
     color: $fontColor;
-    font-family:$fontStack;
+    font-family: $primaryFont;
     text-align: center;
   }
 
@@ -53,14 +57,14 @@ $fontStack: 'Courier New', Courier, "Andale Mono";
 
     border-radius: 50%;
     
-    background-image: url(/*"/assets/img/img_me.jpeg"*/);
+    background-image: url("/assets/img/img_me.jpeg");
     background-size: cover;
   }
 
 
   .bio-1{
     font-weight: 1000;
-    font-size: 1.1em;
+    font-size: 1.3em;
     text-transform: uppercase;
     animation: bio-1 1.5s;
   }
@@ -90,7 +94,7 @@ $fontStack: 'Courier New', Courier, "Andale Mono";
     opacity: 0;
 
     animation: bio-4 1.5s forwards;
-    animation-delay: 4.5s;  
+    animation-delay: 3s;  
 }
 
 .bio-5{
@@ -100,17 +104,22 @@ $fontStack: 'Courier New', Courier, "Andale Mono";
   opacity: 0;
 
   animation: bio-5 1.5s forwards;
-  animation-delay: 6s;  
+  animation-delay: 4.5s;  
 }
 
 .bio-6{
   display: flex;
   justify-content: center;
   align-items: center;
+  
     img{
       width: 25vw;
       margin-bottom: 10vw;
       margin-left: 3vw;
+      opacity: 0;
+
+      animation: bio-arrow 1.5s forwards;
+      animation-delay: 5s;  
       }
       a  //contact button
       {
@@ -118,19 +127,26 @@ $fontStack: 'Courier New', Courier, "Andale Mono";
         justify-content: center;
         align-items: center;
         text-decoration: none;
+
         position: relative;
         width: 20vw;
         min-width: 100px;
         height: 10vw;
         min-height: 50px;
+
         font-family: $fontStack ;
         font-weight: 700;
         font-size: 0.5em;
+
         color: $fontColor;
         border-radius: 2vw;
         background-color: rgb(255,20,147);
+        opacity: 0;
 
         transition-duration: 0.4s;
+
+      animation: bio-button 1.5s forwards;
+      animation-delay: 5s;  
       }
 
       a:hover{
@@ -195,6 +211,29 @@ $fontStack: 'Courier New', Courier, "Andale Mono";
   @keyframes personal-img {
     from{
         transform: translateY(20vw);
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+  }
+
+  @keyframes bio-arrow {
+    from{
+        transform: rotate(50deg);
+        opacity: 0;
+    }
+
+    to{
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+  }
+
+  @keyframes bio-button {
+    from{
+        transform: translatex(-20vw);
         opacity: 0;
     }
 

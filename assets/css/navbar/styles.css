@@ -28,7 +28,7 @@ body {
   background-color: transparent;
   display: flex;
   justify-content: space-around;
-  font-family: "Rockwell Extra Bold,Rockwell Bold,monospace";
+  font-family: stratosFont;
   font-weight: 500;
   font-size: 1em;
   transition-duration: 0.4s;
@@ -61,7 +61,7 @@ body {
   margin: 20px;
 }
 .mobile-menu-button-container .button:hover {
-  color: #5DEEAC;
+  color: rgb(187, 20, 108);
 }
 
 .nav-2 {
@@ -130,7 +130,7 @@ body {
   }
   .nav-2 a:hover {
     transform: translate(0, -5px);
-    color: #5DEEAC;
+    color: rgb(187, 20, 108);
     transition: 0.4s;
     background-color: transparent;
   }
@@ -150,7 +150,7 @@ body {
     text-decoration: none;
   }
   .icon:hover {
-    color: #5DEEAC;
+    color: rgb(187, 20, 108);
     transform: scale(1.2);
   }
   .mobile-menu-button-container {

@@ -25,8 +25,7 @@ window.addEventListener("resize", () => {
         AdjustmentsMobile();
 })
 
-
-
+//some adjustments for desktop-like screens
 function AdjustmentsDesktop() {
     mainMenu.appendChild(nav3);
 
@@ -36,6 +35,7 @@ function AdjustmentsDesktop() {
 
 }
 
+//some adjustments for small screens
 function AdjustmentsMobile() {
     menuButton.innerText = "Menu";
 
@@ -43,7 +43,7 @@ function AdjustmentsMobile() {
 }
 
 
-//mobile menu visualizer
+//small screens menu visualizer
 function expandMenu() {
     if (!isMenuExpanded) {
         isMenuExpanded = true;
@@ -54,7 +54,7 @@ function expandMenu() {
         mainMenu.style.cssText = `height: 300px;`;
         navbar.style.cssText = ` background-color: rgba(0, 16, 28); `
 
-        menuButton.innerText = "Close";
+        menuButton.innerText = "X";
 
     }
     else {

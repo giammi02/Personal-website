@@ -1,16 +1,17 @@
 .home-page {
-  font-size: 1.5em;
   color: rgb(240, 240, 240);
-  font-family: "Courier New", Courier, "Andale Mono";
+  font-family: stratosFont;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .bio {
   margin-right: 5vw;
   margin-left: 5vw;
   z-index: 1;
-  font-size: 1.5em;
+  font-size: 6vw;
   color: rgb(240, 240, 240);
-  font-family: "Courier New", Courier, "Andale Mono";
+  font-family: stratosFont;
   text-align: center;
 }
 
@@ -39,13 +40,13 @@
   height: 38vw;
   width: 38vw;
   border-radius: 50%;
-  background-image: url();
+  background-image: url("/assets/img/img_me.jpeg");
   background-size: cover;
 }
 
 .bio-1 {
   font-weight: 1000;
-  font-size: 1.1em;
+  font-size: 1.3em;
   text-transform: uppercase;
   animation: bio-1 1.5s;
 }
@@ -70,7 +71,7 @@
   font-size: 0.8em;
   opacity: 0;
   animation: bio-4 1.5s forwards;
-  animation-delay: 4.5s;
+  animation-delay: 3s;
 }
 
 .bio-5 {
@@ -78,7 +79,7 @@
   font-size: 0.8em;
   opacity: 0;
   animation: bio-5 1.5s forwards;
-  animation-delay: 6s;
+  animation-delay: 4.5s;
 }
 
 .bio-6 {
@@ -90,6 +91,9 @@
   width: 25vw;
   margin-bottom: 10vw;
   margin-left: 3vw;
+  opacity: 0;
+  animation: bio-arrow 1.5s forwards;
+  animation-delay: 5s;
 }
 .bio-6 a {
   display: inline-flex;
@@ -107,7 +111,10 @@
   color: rgb(240, 240, 240);
   border-radius: 2vw;
   background-color: rgb(255, 20, 147);
+  opacity: 0;
   transition-duration: 0.4s;
+  animation: bio-button 1.5s forwards;
+  animation-delay: 5s;
 }
 .bio-6 a:hover {
   background-color: rgb(187, 20, 108);
@@ -159,6 +166,25 @@
 @keyframes personal-img {
   from {
     transform: translateY(20vw);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes bio-arrow {
+  from {
+    transform: rotate(50deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+}
+@keyframes bio-button {
+  from {
+    transform: translatex(-20vw);
     opacity: 0;
   }
   to {

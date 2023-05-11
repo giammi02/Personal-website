@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: stratosFont;
+  src: url("/assets/fonts/stratos-font-family-1683725785-0/stratos-extrabold-TRIAL-BF63c6049ff24de.otf");
+}
 html {
   scroll-behavior: smooth;
 }
@@ -12,7 +16,7 @@ html {
   position: relative;
   justify-items: center;
   display: grid;
-  grid-template-columns: 100vw;
+  grid-template-columns: 95vw;
   grid-column-gap: 20px;
   grid-row-gap: 40px;
 }
