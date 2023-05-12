@@ -7,12 +7,13 @@
 
 .grid-container-skills{
     display:grid;
-    top: 70px;
     grid-template-columns: 80vw;
     grid-auto-rows: 80vw;
     justify-content: center;
     align-items: center;
-    gap: 0;
+    gap: 2vw;  
+
+    font-family: stratosFont;
 }
 
 .skills-card{
@@ -22,19 +23,27 @@
     background-color: rgb(255, 255, 255, 0.5);
     border-radius: 5px;
     overflow: hidden;
+
+    h3{
+        position: relative;
+        margin-left: 1vw;
+        margin-bottom: 1vw;
+        text-transform: uppercase;
+    }
 }
 
 .skill-line{
-    height: 20%;
+    height: 24%;
     width: 100%;
 
     display:flex;
 }
 
 .skill-name{
+    position: relative;
     display: inline-flex;
-    height: 18vw;
-    width: 18vw;
+    height: 100%;
+    width: 25vw;
 
     flex-direction: column;
     justify-content: end;
@@ -43,13 +52,14 @@
     background-blend-mode: overlay;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: 0 -3vw;
 
     overflow: hidden;
-    p{
+    span{
         font-weight: bold;
         font-size: 3vw;
         margin-bottom: 1vw;
+        text-transform: uppercase;
     }
 }
 
@@ -128,9 +138,8 @@ background-image: url(/assets/img/languages/lang-ridefiniti/javascript.png);
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
     .grid-container-skills{
-        grid-template-columns: repeat(2, 36vw);
-        grid-auto-rows: 36vw;
-        gap: 2vw;
+        grid-template-columns: repeat(2, 40vw);
+        grid-auto-rows: 40vw;
     }
     .dot{
         height: 3vw;
@@ -149,17 +158,24 @@ background-image: url(/assets/img/languages/lang-ridefiniti/javascript.png);
         height: 9vw;
         width: 9vw;
 
-        p{
+        background-position: 0 -1.5vw;
+
+        span{
             font-weight: bold;
             font-size: 1.5vw;
-            margin-bottom: 0.5vw;
-        }
+            margin-bottom: 2vw;
+            }
     }
 
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
+    .grid-container-skills{
+        grid-template-columns: repeat(2, 35vw);
+        grid-auto-rows: 35vw;
+    }
+
     .dot{
         height: 2vw;
         width: 2vw;

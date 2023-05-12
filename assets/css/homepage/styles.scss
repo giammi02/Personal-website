@@ -3,10 +3,11 @@ $secondColor: rgb(187, 20, 108); //#5DEEAC;
 $thirdColor: rgb(139, 131, 167);
 $fontColor: rgb(240,240,240);
 $primaryFont: stratosFont;
-$fontStack: 'Courier New', Courier, "Andale Mono";
 
-
-
+@font-face{
+  font-family: stratosFont;
+  src: url("/assets/fonts/stratos-font-family-1683725785-0/stratos-extrabold-TRIAL-BF63c6049ff24de.otf");
+}
 .home-page{
   color: $fontColor;
   font-family: $primaryFont;
@@ -57,7 +58,7 @@ $fontStack: 'Courier New', Courier, "Andale Mono";
 
     border-radius: 50%;
     
-    background-image: url("/assets/img/img_me.jpeg");
+    background-image: grey; //url("/assets/img/img_me.jpeg");
     background-size: cover;
   }
 
@@ -134,7 +135,7 @@ $fontStack: 'Courier New', Courier, "Andale Mono";
         height: 10vw;
         min-height: 50px;
 
-        font-family: $fontStack ;
+        font-family: $primaryFont ;
         font-weight: 700;
         font-size: 0.5em;
 

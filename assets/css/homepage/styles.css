@@ -1,3 +1,7 @@
+@font-face {
+  font-family: stratosFont;
+  src: url("/assets/fonts/stratos-font-family-1683725785-0/stratos-extrabold-TRIAL-BF63c6049ff24de.otf");
+}
 .home-page {
   color: rgb(240, 240, 240);
   font-family: stratosFont;
@@ -40,7 +44,7 @@
   height: 38vw;
   width: 38vw;
   border-radius: 50%;
-  background-image: url("/assets/img/img_me.jpeg");
+  background-image: grey;
   background-size: cover;
 }
 
@@ -105,7 +109,7 @@
   min-width: 100px;
   height: 10vw;
   min-height: 50px;
-  font-family: "Courier New", Courier, "Andale Mono";
+  font-family: stratosFont;
   font-weight: 700;
   font-size: 0.5em;
   color: rgb(240, 240, 240);

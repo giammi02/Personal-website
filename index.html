@@ -7,12 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 
   <!-- css -->
+  <link href="/assets/css/general/styles.css" rel="stylesheet">
   <link href="/assets/css/navbar/styles.css" rel="stylesheet">
   <link href="/assets/css/portfolio/styles.css" rel="stylesheet">
   <link href="/assets/css/skills/styles.css" rel="stylesheet">
   <link href="/assets/css/footer/styles.css" rel="stylesheet">
   <link href="/assets/css/homepage/styles.css" rel="stylesheet">
-  <link href="/assets/css/general/styles.css" rel="stylesheet">
   <link href="/assets/css/characterRollingEyes2/style.css" rel="stylesheet">
 
 
@@ -61,8 +61,8 @@
   <div class="content-container">
     <div class="section home-page" id="home-page">
 
-      <p class="bio bio-1"> Welcome to my website! </p>
-      <p class="bio bio-2"> I am Gianmarco Gioia </p>
+      <h1 class="bio bio-1"> Welcome to my website! </h1>
+      <span class="bio bio-2"> I am Gianmarco Gioia </span>
 
       <!-- personal image-->
       <div class="personal-img-container">
@@ -71,10 +71,10 @@
       </div>
 
 
-      <p class="bio bio-3"> Junior back-end delevoper with front-end skills</p>
+      <span class="bio bio-3"> Junior back-end delevoper with front-end skills</span>
       <!--<p class="bio bio-4"> Currently studying computer science (1st year) at <a href="https://www.unicam.it/"> University of Camerino</a> and attending <a href="https://www.unicam.it/"> Start2Impact</a> course to improve my coding skills</p> -->
-      <p class="bio bio-4"> I am currently looking for a part-time job while i finish my studies</p>
-      <p class="bio bio-5"> If you are interested in working with me</p>
+      <span class="bio bio-4"> I am currently looking for a part-time job while i finish my studies</span>
+      <span class="bio bio-5"> If you are interested in working with me</span>
       <div class="bio bio-6">
         <a href="#contact" class="button-contact"> Contact me </a>
         <img src="/assets/img/arrow_w.png">
@@ -84,13 +84,14 @@
 
 
     
-    <h2>HARD SKILLS </h2>
+    <h2 id="skills"> HARD SKILLS </h2>
     <!-- SKILLS -->
-    <div class="section grid-container-skills" id="skills">
+    <div class="section grid-container-skills">
       <div class="skills-card">
+        <h3> Programming languages </h3>
         <div class="skill-line item-1">
           <div class="skill-name bg-javascript">
-            <p> javascript </p>
+            <span> javascript </span>
           </div>
           <div class="skill-advancement">
             <div class="dot"></div>
@@ -99,8 +100,9 @@
         </div>
         <div class="skill-line">
           <div class="skill-name bg-java">
-            <p> java </p>
+            <span> java </span>
           </div>
+
           <div class="skill-advancement">
             <div class="dot"></div>
             <div class="dot"> </div>
@@ -110,7 +112,7 @@
         </div>
         <div class="skill-line">
           <div class="skill-name bg-c-sharp">
-            <p> C# </p>
+            <span> C# </span>
           </div>
           <div class="skill-advancement">
             <div class="dot"></div>
@@ -121,9 +123,10 @@
       </div>
       <!-- END SKILLS CARD-->
       <div class="skills-card">
+        <h3> Other languages </h3>
         <div class="skill-line">
           <div class="skill-name bg-html">
-            <p> HTML 5 </p>
+            <span> HTML 5 </span>
           </div>
           <div class="skill-advancement">
             <div class="dot"></div>
@@ -134,7 +137,7 @@
         </div>
         <div class="skill-line item-1">
           <div class="skill-name bg-css">
-            <p> CSS 3 </p>
+            <span> CSS 3 </span>
           </div>
           <div class="skill-advancement">
             <div class="dot"></div>
@@ -144,7 +147,7 @@
         </div>
         <div class="skill-line">
           <div class="skill-name bg-sass">
-            <p> SASS </p>
+            <span> SASS </span>
           </div>
           <div class="skill-advancement">
             <div class="dot"></div>
@@ -156,10 +159,10 @@
       </div>
       <!-- SKILLS CARD -->
       <div class="skills-card">
-        <h3> Other digital tools </h3>
+        <h3> Digital tools </h3>
         <div class="skill-line">
           <div class="skill-name bg-office">
-            <p> office </p>
+            <span> office </span>
           </div>
           <div class="skill-advancement">
             <div class="dot"></div>
@@ -170,7 +173,7 @@
         </div>
         <div class="skill-line">
           <div class="skill-name bg-photoshop">
-            <p> Photoshop </p>
+            <span> Photoshop </span>
           </div>
           <div class="skill-advancement">
             <div class="dot"></div>
@@ -182,9 +185,10 @@
 
       <!-- SKILLS CARD -->
       <div class="skills-card">
+        <h3> Languages </h3>
         <div class="skill-line item-1">
           <div class="skill-name bg-ItFlag">
-            <p> Italiano </p>
+            <span> Italian </span>
           </div>
           <div class="skill-advancement">
             <div class="dot item-1"></div>
@@ -196,7 +200,7 @@
         </div>
         <div class="skill-line item-1">
           <div class="skill-name bg-EnFlag">
-            <p> Inglese </p>
+            <span> English </span>
           </div>
           <div class="skill-advancement">
             <div class="dot item-1"></div>
@@ -209,19 +213,23 @@
     <!-- END SKILLS CARD-->
 
 
-  <div class="section grid-container-portfolio" id="portfolio">
+    <h2 id="portfolio"> PORTFOLIO </h2>
+  <div class="section grid-container-portfolio" >
     <!-- PROJECT CARD ITEM-->
     <div class="project-card-container">
-      <div class="lang-used item-1"></div>
+      <div class="lang-used item-1 bg-javascript"></div>
+      <div class="lang-used item-2 bg-html"></div>
+      <div class="lang-used item-3 bg-css"></div>
+
       <div class="project-card" id="project-card-1">
-        <p class="project-name"> Nome progetto</p>
-        <button type="button" class="button-project"><a href="#">Vai al progetto</a></button>
+        <p class="project-name"> Counter </p>
+        <button type="button" class="button-project"><a href="#">Link project</a></button>
       </div>
     </div>
     <!-- END PROJECT CARD ITEM-->
     <!-- PROJECT CARD ITEM-->
     <div class="project-card-container">
-      <div class="lang-used item-1"><img src="javascript.png"></div>
+      <div class="lang-used item-1" id="project-card-2"><img src="javascript.png"></div>
       <div class="lang-used item-2"></div>
       <div class="lang-used item-3"></div>
 
