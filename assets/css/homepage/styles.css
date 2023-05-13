@@ -50,13 +50,13 @@
 
 .bio-1 {
   font-weight: 1000;
-  font-size: 1.3em;
+  font-size: 1.5em;
   text-transform: uppercase;
   animation: bio-1 1.5s;
 }
 
 .bio-2 {
-  font-size: 1em;
+  font-size: 1.2em;
   opacity: 0;
   animation: bio-2 1.5s forwards;
   animation-delay: 1.5s;
@@ -64,23 +64,23 @@
 
 .bio-3 {
   margin-top: 5vh;
-  font-size: 1em;
+  font-size: 1.2em;
   opacity: 0;
-  animation: bio-3 1.5s forwards;
+  animation: bio-3 1s forwards;
   animation-delay: 3s;
 }
 
 .bio-4 {
   margin-top: 5vh;
-  font-size: 0.8em;
+  font-size: 1em;
   opacity: 0;
-  animation: bio-4 1.5s forwards;
+  animation: bio-4 1s forwards;
   animation-delay: 3s;
 }
 
 .bio-5 {
   margin-top: 5vh;
-  font-size: 0.8em;
+  font-size: 1.4em;
   opacity: 0;
   animation: bio-5 1.5s forwards;
   animation-delay: 4.5s;
@@ -142,7 +142,7 @@
 }
 @keyframes bio-3 {
   from {
-    transform: translateY(20vw);
+    transform: translateY(5vw);
     opacity: 0;
   }
   to {
@@ -151,7 +151,7 @@
 }
 @keyframes bio-4 {
   from {
-    transform: translateY(20vw);
+    transform: translateY(5vw);
     opacity: 0;
   }
   to {
@@ -160,7 +160,7 @@
 }
 @keyframes bio-5 {
   from {
-    transform: translateY(20vw);
+    transform: translateY(5vw);
     opacity: 0;
   }
   to {

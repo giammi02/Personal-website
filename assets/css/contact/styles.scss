@@ -1,0 +1,74 @@
+
+#contact-img {
+    width: 90vw;
+    
+}
+
+#contact-form {
+    display: block;
+
+    width: 100%;
+    height: 45vw;
+
+    background-color: rgba(32, 32, 32, 0.7);
+    border-radius: 4px;
+
+    label{
+       color: white; 
+       font-family: stratosFont;
+       margin-left: 4vw;
+
+    }
+
+    textarea{
+        display:block;
+        margin-left: 4vw;
+    }
+}
+
+#contact-form input{
+    display: block;
+    margin-left: 4vw;
+}
+
+#contact-form input[type='name']{
+    
+}
+
+#contact-form input[type='email']{
+
+}
+
+#contact-form input[type='submit']{
+
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(92, 92, 92, 0.9);
+    font-family: stratosFont;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgba(92, 92, 92, 0.9);
+    font-family: stratosFont; 
+  }
+  
+  ::-ms-input-placeholder {     /* Microsoft Edge */
+    color: rgba(92, 92, 92, 0.9);
+    font-family: stratosFont; 
+  }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+
+}
+
+// Medium devices (tablets, 768px and up) *** SAME AS SMALL DEVICES ***
+@media (min-width: 768px){
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px){
+
+}

@@ -25,7 +25,7 @@
   position: relative;
   z-index: 5;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: space-between;
   width: 90vw;
   height: 50.625vw;
@@ -36,6 +36,7 @@
   background-size: 100%;
   overflow: hidden;
   margin-top: 4.5vw;
+  transition-duration: 0.5s;
 }
 
 .project-name {
@@ -44,32 +45,44 @@
   font-size: 4.5vw;
   color: white;
   font-weight: bold;
+  transition-duration: 0.5s;
 }
 
 .button-project {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
   margin-left: 5.625vw;
-  border: none;
   height: 10.125vw;
   width: 22.5vw;
+  border: none;
   border-radius: 5px;
   background-color: rgb(255, 20, 147);
-  text-transform: uppercase;
-  transition-duration: 0.4s;
   font-size: 3.6vw;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  transition-duration: 0.5s;
 }
-.button-project a {
+.button-project span {
   font-family: stratosFont;
   letter-spacing: 0.05em;
-  text-decoration: none;
   color: white;
   font-weight: bold;
 }
 
 .button-project:hover {
-  background-color: white;
-  transition-duration: 0.4s;
+  height: 80%;
+  width: 90%;
+  background-color: rgba(255, 20, 147, 0.5);
+  transition-duration: 0.5s;
+}
+
+.button-project:hover + .project-name {
+  opacity: 0;
+  transition-duration: 0.5s;
 }
 
 .lang-used {
@@ -77,7 +90,7 @@
   z-index: 10;
   height: 11.25vw;
   width: 11.25vw;
-  background-color: rgba(32, 32, 32, 0.5);
+  background-color: rgba(32, 32, 32, 0.7);
   border-radius: 5px;
   overflow: hidden;
   background-size: cover;

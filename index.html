@@ -13,6 +13,7 @@
   <link href="/assets/css/skills/styles.css" rel="stylesheet">
   <link href="/assets/css/footer/styles.css" rel="stylesheet">
   <link href="/assets/css/homepage/styles.css" rel="stylesheet">
+  <link href="/assets/css/contact/styles.css" rel="stylesheet">
   <link href="/assets/css/characterRollingEyes2/style.css" rel="stylesheet">
 
 
@@ -59,7 +60,8 @@
   <!--background for all the website-->
   <div class="fixed-bg"> </div>
   <div class="content-container">
-    <div class="section home-page" id="home-page">
+    <section  id="home-page">
+    <div class="home-page">
 
       <h1 class="bio bio-1"> Welcome to my website! </h1>
       <span class="bio bio-2"> I am Gianmarco Gioia </span>
@@ -81,12 +83,12 @@
       </div>
 
     </div>
+  </section>
 
-
-    
-    <h2 id="skills"> HARD SKILLS </h2>
+  <section  id="skills">
+    <h2> HARD SKILLS </h2>
     <!-- SKILLS -->
-    <div class="section grid-container-skills">
+    <div class="grid-container-skills">
       <div class="skills-card">
         <h3> Programming languages </h3>
         <div class="skill-line item-1">
@@ -167,8 +169,8 @@
           <div class="skill-advancement">
             <div class="dot"></div>
             <div class="dot"> </div>
-            <div class="dot"> </div> 
-            <div class="dot half-dot"> </div>             
+            <div class="dot"> </div>
+            <div class="dot half-dot"> </div>
           </div>
         </div>
         <div class="skill-line">
@@ -210,67 +212,62 @@
         </div>
       </div>
     </div>
+
+  </section>
     <!-- END SKILLS CARD-->
 
-
+    <section id="portfolio">
     <h2 id="portfolio"> PORTFOLIO </h2>
-  <div class="section grid-container-portfolio" >
-    <!-- PROJECT CARD ITEM-->
-    <div class="project-card-container">
-      <div class="lang-used item-1 bg-javascript"></div>
-      <div class="lang-used item-2 bg-html"></div>
-      <div class="lang-used item-3 bg-css"></div>
+    <div class="grid-container-portfolio">
+      <!-- PROJECT CARD ITEM-->
+      <div class="project-card-container">
+        <div class="lang-used item-1 bg-javascript"></div>
+        <div class="lang-used item-2 bg-html"></div>
+        <div class="lang-used item-3 bg-css"></div>
 
-      <div class="project-card" id="project-card-1">
-        <p class="project-name"> Counter </p>
-        <button type="button" class="button-project"><a href="#">Link project</a></button>
-      </div>
-    </div>
-    <!-- END PROJECT CARD ITEM-->
-    <!-- PROJECT CARD ITEM-->
-    <div class="project-card-container">
-      <div class="lang-used item-1" id="project-card-2"><img src="javascript.png"></div>
-      <div class="lang-used item-2"></div>
-      <div class="lang-used item-3"></div>
+        <div class="project-card" id="project-card-1">
+          <a type="button" class="button-project" href="#"><span>Link project</span></a>
+          <p class="project-name"> Counter </p>
 
-      <div class="project-card">
-        <p class="project-name"> Nome progetto</p>
-        <button type="button" class="button-project"><a href="#">Vai al progetto</a></button>
+        </div>
       </div>
+      <!-- END PROJECT CARD ITEM-->
+      <!-- PROJECT CARD ITEM-->
+      <div class="project-card-container">
+        <div class="lang-used item-1"><img src="javascript.png"></div>
+        <div class="lang-used item-2"></div>
+        <div class="lang-used item-3"></div>
 
-    </div>
-    <!-- END PROJECT CARD ITEM-->
-    <!-- PROJECT CARD ITEM-->
-    <div class="project-card-container">
-      <div class="lang-used item-1"></div>
-      <div class="project-card">
-        <p class="project-name"> Nome progetto</p>
-        <button type="button" class="button-project"><a href="#">Vai al progetto</a></button>
+        <div class="project-card" id="project-card-2">
+          <a type="button" class="button-project" href="#"><span>Vai al progetto</span></a>
+          <p class="project-name"> Nome progetto</p>
+        </div>
+
       </div>
+      <!-- END PROJECT CARD ITEM-->
+      
     </div>
-    <!-- END PROJECT CARD ITEM-->
-    <div class="project-card-container">
-      <div class="lang-used item-1"></div>
-      <div class="project-card">
-        <p class="project-name"> Nome progetto</p>
-        <button type="button" class="button-project"><a href="#">Vai al progetto</a></button>
-      </div>
-    </div>
-    <!-- END PROJECT CARD ITEM-->
-    <div class="project-card-container">
-      <div class="lang-used item-1"></div>
-      <div class="project-card">
-        <p class="project-name"> Nome progetto</p>
-        <button type="button" class="button-project"><a href="#">Vai al progetto</a></button>
-      </div>
-    </div>
-    <!-- END PROJECT CARD ITEM-->
+  </section>
+
+    <!-- CONTACT FORM -->
+    <section id="contact">
+      <h2> CONTACT ME </h2>
+      <img src="assets/img/sendContact.png" id="contact-img">
+    <form method='get' id="contact-form">
+
+      <input type="hidden" name="contact_number">
+      <label>Name / Company name</label>
+      <input type="text" name="user_name">
+      <label>Email</label>
+      <input type="email" name="user_email" placeholder=' yourmail@example.com'/>
+      <label>Message</label>
+      <textarea name="message"></textarea>
+      <input type="submit" value="Send">
+
+    </form>
+  </section>
+
   </div>
-
-</div>
-
-
-
 
   <!-- END MAIN CONTENT-->
   </div>
@@ -291,6 +288,8 @@
   <script src="assets/js/scriptNavbar.js">  </script>
   <script src="assets/js/scriptPageScroll.js">  </script>
   <script src="assets/js/scriptRollingEyes2.js">  </script>
+  <script src="assets/js/scriptPortfolio.js">  </script>
+
 
 
 

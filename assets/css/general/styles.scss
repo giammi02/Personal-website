@@ -20,6 +20,8 @@ h2{
   top: 70px;
   padding-top: 80px;
   font-family: stratosFont;
+  text-align: center;
+  margin-bottom: 40px;
 }
 span{
   display: block;
@@ -28,13 +30,14 @@ span{
     position: relative;
     justify-items: center;
     display: grid;
-    grid-template-columns: 95vw;
+    grid-template-columns: 100vw;
     grid-column-gap: 20px;
     grid-row-gap: 40px;
-
+    overflow: hidden;
   }
 
-.section{
+
+section{
     min-height: 100vh;
     width: 95vw;
 }
