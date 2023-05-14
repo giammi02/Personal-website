@@ -7,13 +7,13 @@ $(function() {
       scrollSpeed: 100,
 
 });
-
+/*
 if( $(window).width() < 768) {
   $.scrollify.disable()
 }else{
   $.scrollify.enable()
 }})
-
+*/
 /*
 $('.link').click(function(){
     var moveTo = $(this).attr('href');
