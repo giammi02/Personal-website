@@ -7,6 +7,7 @@ $(function() {
       scrollSpeed: 100,
 
 });
+});
 /*
 if( $(window).width() < 768) {
   $.scrollify.disable()
