@@ -1,7 +1,7 @@
 
 $(function() {
   $.scrollify({
-      section : ".section",
+      section : "section",
       sectionName: false,
       easing: "easeOutExpo",
       scrollSpeed: 100,

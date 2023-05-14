@@ -137,10 +137,12 @@ background-image: url(/assets/img/languages/lang-ridefiniti/javascript.png);
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+    
     .grid-container-skills{
         grid-template-columns: repeat(2, 40vw);
         grid-auto-rows: 40vw;
     }
+
     .dot{
         height: 3vw;
         width: 3vw;
