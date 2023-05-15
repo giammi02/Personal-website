@@ -1,10 +1,12 @@
+$thirdColor: rgb(240,240,240);// rgb(80, 80, 80);
+
 *
 {
 box-sizing: border-box;
 margin: 0;
 padding: 0;
-
 }
+
 @font-face{
   font-family: stratosFont;
   src: url("/assets/fonts/stratos-font-family-1683725785-0/stratos-extrabold-TRIAL-BF63c6049ff24de.otf");
@@ -53,11 +55,18 @@ section{
   z-index: 0;
 }
 
+.icon{
+  font-size: 1.5em;
+  color: $thirdColor;
+  transition-duration: 0.4s;
+  text-decoration: none;
+}
+
+
   //Large devices (desktops, 992px and up)
   @media only screen and (min-width:992px) {
     .fixed-bg{
-
       background-image: url(/assets/img/bg-blue.svg);
-
     }
+
   }

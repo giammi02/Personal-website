@@ -127,10 +127,7 @@ transition-duration: 0.4s;
 .icon
 {
     opacity: 0; //fix icons appearing for a moment at the load of the site
-    font-size: 1.5em;
-    color: $thirdColor;
-    transition-duration: 0.4s;
-    text-decoration: none;
+
 }
 .icon:hover,
 .icon:active

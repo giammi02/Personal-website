@@ -1,5 +1,6 @@
-#contact-img {
-  width: 90vw;
+.contact-container {
+  display: flex;
+  justify-content: center;
 }
 
 #contact-form {
@@ -42,9 +43,11 @@
   font-family: stratosFont;
 }
 
-#contact-form input:checked,
-#contact-form textarea:checked {
-  background-color: red;
+#contact-form input:focus,
+#contact-form textarea:focus {
+  outline-style: solid;
+  outline-width: 3px;
+  outline-color: rgb(187, 20, 108);
 }
 
 #contact-form input[type=submit] {
@@ -53,22 +56,60 @@
   max-width: 50%;
 }
 
+::-moz-placeholder:focus { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  opacity: 0;
+}
+
+::placeholder:focus { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  opacity: 0;
+}
+
 ::-moz-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: rgba(92, 92, 92, 0.9);
+  color: rgba(92, 92, 92, 0.7);
   font-family: stratosFont;
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: rgba(92, 92, 92, 0.9);
+  color: rgba(92, 92, 92, 0.7);
   font-family: stratosFont;
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: rgba(92, 92, 92, 0.9);
+  color: rgba(92, 92, 92, 0.7);
   font-family: stratosFont;
 }
 
 ::-ms-input-placeholder { /* Microsoft Edge */
-  color: rgba(92, 92, 92, 0.9);
+  color: rgba(92, 92, 92, 0.7);
   font-family: stratosFont;
+}
+
+@media (min-width: 768px) {
+  #contact-form {
+    height: 60vw;
+  }
+}
+@media (min-width: 992px) {
+  #contact-form {
+    position: relative;
+    overflow: hidden;
+    height: 40vw;
+    width: 55vw;
+    margin-bottom: 10%;
+    align-self: center;
+  }
+  #contact-form textarea {
+    min-height: 20%;
+    max-height: 20%;
+    max-width: 70%;
+  }
+  #contact-form input {
+    min-height: 8%;
+    max-height: 8%;
+  }
+  #contact-form input,
+  #contact-form textarea {
+    min-width: 70%;
+    max-width: 70%;
+  }
 }/*# sourceMappingURL=styles.css.map */

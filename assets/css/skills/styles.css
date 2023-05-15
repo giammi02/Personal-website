@@ -80,6 +80,26 @@
   transform: translateX(-3vw);
 }
 
+/*
+.skills-card
+{
+    opacity: 0;
+    transform: translateX(-20w);
+    transition-duration: 2s;
+
+}
+.animated-right{
+    opacity:1;
+    transform: translateX(0);
+    transition-duration: 2s;
+
+}
+
+.animated-left{
+    opacity:0;
+    transform: translateX(20vw);
+}
+*/
 .bg-javascript {
   background-image: url(/assets/img/languages/lang-ridefiniti/javascript.png);
 }
