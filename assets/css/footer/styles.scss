@@ -3,35 +3,69 @@
     bottom: 0;
 
     display: flex;
-    justify-content:space-around;
-
+    flex-direction: column;
     height: 80px;
 
     background-color: rgba(0, 16, 28); 
 
     .icon{
         color: white;
+        opacity: 1;
     }
 }
 
 .footer-1{
+    height: 50%;
+    width: 100%;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    width:50%;
 
-    padding: 20px;
+
     font-family: stratosFont;
 }
+.container-footer-2{
+    display: flex;
+    justify-content:center;
 
+    height: 50%;
+    width: 100%;
+
+}
 .footer-2{
+    position: relative;
+    bottom: 0;
+    height: 90%;
+    width: 50%;
 
     display: flex;
     justify-content:space-around;
     align-items: center;
 
-    height: 100%;
-    width:50%;
+}
+
+
+@media (min-width: 768px) {
+
+    .footer{
+        justify-content:space-around;
+        flex-direction: row;
+    }
+
+    .footer-1{
+        height: 100%;
+        width:50%;    
+    }
+
+    .container-footer-2{
+        height: 100%;
+        width:50%;
+    }
+    .footer-2{
+        position: relative;
+        height: 100%;
+        width:40%;
+    }
 
 }

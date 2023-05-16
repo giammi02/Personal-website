@@ -22,6 +22,9 @@
   <!-- font awesome-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
+  <!-- EmailJS-->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
   <title> Home </title>
 
 </head>
@@ -255,13 +258,13 @@
       <div class="contact-container">
         <form method='get' id="contact-form">
 
-          <input type="hidden" name="contact_number">
+          <input  type="hidden" name="contact_number">
           <label>Name / Company name</label>
-          <input type="text" name="user_name" placeholder=' XYZ corporation'>
+          <input data-name type="text" name="user_name" placeholder=' XYZ corporation' required>
           <label>Email</label>
-          <input type="email" name="user_email" placeholder=' yourmail@example.com' />
+          <input data-email type="email" name="user_email" placeholder=' yourmail@example.com' required/>
           <label>Message</label>
-          <textarea name="message"  placeholder=' Write your message here...'></textarea>
+          <textarea data-message name="message"  placeholder=' Write your message here...' required></textarea>
           <input type="submit" value="Send">
       </div>
       </form>
@@ -281,49 +284,33 @@
       Your browser does not support audio
     </audio>
   </div>
-  -->
+   -->
+
   <!-- FOOTER -->
   <footer>
     <div class="footer">
       <div class="footer-1">
         <span> Website built by Gianmarco Gioia</span>
       </div>
+      <div class="container-footer-2">
       <div class="footer-2">
         <a href="#" class="fab fa-linkedin icon"></a>
         <a href="#" class="fab fa-github icon"></a>
         <a href="#" class="fab fa-instagram icon"></a>
       </div>
+    </div>
 
     </div>
   </footer>
   <!-- END FOOTER -->
+
+
   <script src="assets/js/scriptNavbar.js">  </script>
-  <script src="assets/js/scriptPageScroll.js">  </script>
+  <!--<script src="assets/js/scriptContact.js">  </script> -->
   <script src="assets/js/scriptRollingEyes2.js">  </script>
   <script src="assets/js/scriptPortfolio.js">  </script>
 
 
-
-  <!--
-   JQUERY 3.6.4 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
-    integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-   Easing functions plugin 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
-    integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-
-   scrollify 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js"
-    integrity="sha512-UyX8JsMsNRW1cYl8BoxpcamonpwU2y7mSTsN0Z52plp7oKo1u92Xqfpv6lOlTyH3yiMXK+gU1jw0DVCsPTfKew=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
--->
-
-
-  <script src="assets/js/scriptPageScroll.js">  </script>
 </body>
 
 </html>

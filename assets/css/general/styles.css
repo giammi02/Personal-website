@@ -46,7 +46,7 @@ section {
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: url(/assets/img/bg-blue-vertical.svg);
+  background-color: rgb(32, 90, 122);
   background-size: 100%;
   z-index: 0;
 }
@@ -56,10 +56,4 @@ section {
   color: rgb(240, 240, 240);
   transition-duration: 0.4s;
   text-decoration: none;
-}
-
-@media only screen and (min-width: 992px) {
-  .fixed-bg {
-    background-image: url(/assets/img/bg-blue.svg);
-  }
 }/*# sourceMappingURL=styles.css.map */

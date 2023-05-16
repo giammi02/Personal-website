@@ -44,7 +44,7 @@
   height: 38vw;
   width: 38vw;
   border-radius: 50%;
-  background-image: grey;
+  background-image: url("/assets/img/img_me.jpeg");
   background-size: cover;
 }
 

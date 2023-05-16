@@ -4,7 +4,7 @@
 }
 
 #contact-form {
-  overflow: scroll;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,6 +39,7 @@
   max-width: 80%;
   border-radius: 5px;
   border: none;
+  padding: 1vw 1vw;
   color: rgba(92, 92, 92, 0.9);
   font-family: stratosFont;
 }
