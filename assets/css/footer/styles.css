@@ -1,10 +1,14 @@
 .footer {
-  position: relative;
+  position: absolute;
   bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   height: 80px;
   background-color: rgb(0, 16, 28);
+  margin-top: auto;
 }
 .footer .icon {
   color: white;

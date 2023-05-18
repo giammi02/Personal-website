@@ -1,6 +1,9 @@
 .footer{
-    position:relative;
+    position:absolute;
     bottom: 0;
+    left:0;
+    right:0;
+    overflow: hidden;
 
     display: flex;
     flex-direction: column;
@@ -8,6 +11,7 @@
 
     background-color: rgba(0, 16, 28); 
 
+    margin-top: auto;
     .icon{
         color: white;
         opacity: 1; //fix icon disappearing (script for mobiles)

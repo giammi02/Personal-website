@@ -4,18 +4,20 @@
   padding: 0;
 }
 
-body {
-  position: relative;
-  min-height: 100vh;
-  min-height: 100%;
-}
-
 @font-face {
   font-family: stratosFont;
   src: url("/assets/fonts/stratos-font-family-1683725785-0/stratos-extrabold-TRIAL-BF63c6049ff24de.otf");
 }
 html {
   scroll-behavior: smooth;
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 h1,
