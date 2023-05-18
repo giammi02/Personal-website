@@ -33,6 +33,7 @@
 #contact-form input {
   display: block;
   min-height: 10%;
+  max-height: 10%;
 }
 
 #contact-form input,
@@ -54,9 +55,9 @@
 }
 
 #contact-form input[type=submit] {
+  position: relative;
   margin-top: 2vw;
   min-width: 50%;
-  max-width: 50%;
 }
 
 ::-moz-placeholder:focus { /* Chrome, Firefox, Opera, Safari 10.1+ */
