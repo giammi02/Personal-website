@@ -21,6 +21,10 @@ h2 {
   margin-bottom: 40px;
 }
 
+h2 {
+  font-size: 1.5em;
+}
+
 span {
   display: block;
 }
@@ -46,7 +50,7 @@ section {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgb(32, 90, 122);
+  background-image: url(/assets/img/bg-blue-vertical.svg);
   background-size: 100%;
   z-index: 0;
 }
@@ -56,4 +60,15 @@ section {
   color: rgb(240, 240, 240);
   transition-duration: 0.4s;
   text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+  h2 {
+    font-size: 1.8em;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .fixed-bg {
+    background-image: url(/assets/img/bg-blue.svg);
+  }
 }/*# sourceMappingURL=styles.css.map */

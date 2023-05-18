@@ -1,9 +1,3 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
 .grid-container-portfolio {
   display: grid;
   grid-template-columns: 90vw;

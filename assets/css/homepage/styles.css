@@ -13,7 +13,6 @@
   margin-right: 5vw;
   margin-left: 5vw;
   z-index: 1;
-  font-size: 6vw;
   color: rgb(240, 240, 240);
   font-family: stratosFont;
   text-align: center;
@@ -64,7 +63,7 @@
 
 .bio-3 {
   margin-top: 5vh;
-  font-size: 1.2em;
+  font-size: 1em;
   opacity: 0;
   animation: bio-3 1s forwards;
   animation-delay: 3s;
@@ -72,7 +71,7 @@
 
 .bio-4 {
   margin-top: 5vh;
-  font-size: 1em;
+  font-size: 0.8em;
   opacity: 0;
   animation: bio-4 1s forwards;
   animation-delay: 3s;
@@ -80,7 +79,7 @@
 
 .bio-5 {
   margin-top: 5vh;
-  font-size: 1.4em;
+  font-size: 1em;
   opacity: 0;
   animation: bio-5 1.5s forwards;
   animation-delay: 4.5s;
@@ -92,7 +91,7 @@
   align-items: center;
 }
 .bio-6 img {
-  width: 25vw;
+  width: 22vw;
   margin-bottom: 10vw;
   margin-left: 3vw;
   opacity: 0;
@@ -111,7 +110,7 @@
   min-height: 50px;
   font-family: stratosFont;
   font-weight: 700;
-  font-size: 0.5em;
+  font-size: 0.8em;
   color: rgb(240, 240, 240);
   border-radius: 2vw;
   background-color: rgb(255, 20, 147);
@@ -206,10 +205,32 @@
   .personal-img-container {
     height: 50vw;
   }
-}
-@media (min-width: 768px) {
+  .bio-1 {
+    font-size: 1.6em;
+  }
+  .bio-2 {
+    font-size: 1.3em;
+  }
+  .bio-4 {
+    font-size: 1.2em;
+  }
+  .bio-3,
+  .bio-5 {
+    font-size: 1.5em;
+  }
+  .bio-6 img {
+    width: 20vw;
+  }
   .bio-6 a {
-    font-size: 0.65em;
+    font-size: 1em;
+  }
+}
+@media (min-width: 576px) and (min-width: 768px) {
+  .bio-6 img {
+    width: 20vw;
+  }
+  .bio-6 a {
+    font-size: 1.4em;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -263,5 +284,24 @@
   }
   .bg-blob {
     height: 23vw;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .bio-1 {
+    font-size: 1.8em;
+  }
+  .bio-2 {
+    font-size: 1.5em;
+  }
+  .bio-4 {
+    font-size: 1.4em;
+  }
+  .bio-3,
+  .bio-5 {
+    font-size: 1.7em;
+  }
+  .bio-6 img {
+    margin-top: 5vw;
+    width: 8vw;
   }
 }/*# sourceMappingURL=styles.css.map */

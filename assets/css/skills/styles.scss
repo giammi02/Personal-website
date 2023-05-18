@@ -29,6 +29,7 @@
         margin-left: 1vw;
         margin-bottom: 1vw;
         text-transform: uppercase;
+        font-size: 5vw;
     }
 }
 
@@ -57,7 +58,7 @@
     overflow: hidden;
     span{
         font-weight: bold;
-        font-size: 3vw;
+        font-size: 3.5vw;
         margin-bottom: 1vw;
         text-transform: uppercase;
     }
@@ -87,73 +88,60 @@
     clip-path: circle(50% at right);
     transform: translateX(-3vw);
 }
-/*
-.skills-card
-{
-    opacity: 0;
-    transform: translateX(-20w);
-    transition-duration: 2s;
-
-}
-.animated-right{
-    opacity:1;
-    transform: translateX(0);
-    transition-duration: 2s;
-
-}
-
-.animated-left{
-    opacity:0;
-    transform: translateX(20vw);
-}
-*/
 
 //backgrounds (images)
 .bg-javascript{
-background-image: url(/assets/img/languages/lang-ridefiniti/javascript.png);
+background-image: url(/assets/img/languages/javascript.png);
 }
 
 .bg-c-sharp{
-    background-image: url(/assets/img/languages/lang-ridefiniti/C-sharp.png);
+    background-image: url(/assets/img/languages//C-sharp.png);
 }
 
 .bg-java{
-    background-image: url(/assets/img/languages/lang-ridefiniti/java.png);
+    background-image: url(/assets/img/languages/java.png);
 }
 
 .bg-html{
-    background-image: url(/assets/img/languages/lang-ridefiniti/html.png);
+    background-image: url(/assets/img/languages/html.png);
 }
 
 .bg-css{
-    background-image: url(/assets/img/languages/lang-ridefiniti/css.png);
+    background-image: url(/assets/img/languages/css.png);
 }
 
 .bg-sass{
-    background-image: url(/assets/img/languages/lang-ridefiniti/sass.png);
+    background-image: url(/assets/img/languages/sass.png);
 }
 
 .bg-photoshop{
-    background-image: url(/assets/img/languages/lang-ridefiniti/photoshop.png);
+    background-image: url(/assets/img/languages/photoshop.png);
 }
 
 .bg-office{
-    background-image: url(/assets/img/languages/lang-ridefiniti/office.png);
+    background-image: url(/assets/img/languages/office.png);
 
 }
 
 .bg-ItFlag{
-    background-image: url(/assets/img/languages/lang-ridefiniti/ItFlag.png);
+    background-image: url(/assets/img/languages/ItFlag.png);
 }
 
 .bg-EnFlag{
-    background-image: url(/assets/img/languages/lang-ridefiniti/EnFlag.png);
+    background-image: url(/assets/img/languages/EnFlag.png);
 }
 
 
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+.skills-card{
+    h3{
+        font-size: 4vw;
+    }
+}
+
+}
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
@@ -176,10 +164,15 @@ background-image: url(/assets/img/languages/lang-ridefiniti/javascript.png);
         transform: translateX(-1.5vw);
     }
 
+    .skills-card{
+        h3{
+            font-size: 2vw;
+        }
+    }
+
     .skill-name{
         height: 9vw;
         width: 9vw;
-
         background-position: 0 -1.5vw;
 
         span{
@@ -205,10 +198,29 @@ background-image: url(/assets/img/languages/lang-ridefiniti/javascript.png);
         margin: 1.5vw;
     }
 
+    .skills-card{
+        h3{
+            font-size: 1.8vw;
+        }
+    }
+
 }
 
 // X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+
+    .skills-card{
+        h3{
+            font-size: 1.7vw;
+        }
+    }
+
+    .skill-name{
+        span{
+            font-size: 1.3vw;
+            }
+    }
+}
 
 // XX-Large devices (larger desktops, 1900px and up)
 @media (min-width: 1900px) {}

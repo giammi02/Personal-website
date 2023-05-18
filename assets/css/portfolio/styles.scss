@@ -34,12 +34,6 @@ $langSideXXL: 0.1 * $cardWidthXXL;
 
 // X-Small devices (portrait phones, less than 576px)
 
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
 .grid-container-portfolio {
     display: grid;
     grid-template-columns: $cardWidthXS;
