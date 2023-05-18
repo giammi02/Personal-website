@@ -20,7 +20,7 @@
     height: 100%;
     width: 100%;
     
-    background-color: rgb(255, 255, 255, 0.5);
+    background-color: rgba(32, 32, 32, 0.7);
     border-radius: 5px;
     overflow: hidden;
 
@@ -76,12 +76,11 @@
 
     height: 6vw;
     width: 6vw;
-
     shape-outside: circle(50%);
     clip-path: circle(50% at 50%);
 
     margin: 3vw;
-    background-color: aqua;
+    background-color: rgb(255, 20, 147);
 }
 .half-dot{
     shape-outside: circle(50%);

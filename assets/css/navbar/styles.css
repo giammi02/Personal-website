@@ -61,7 +61,7 @@ body {
   margin: 20px;
 }
 .mobile-menu-button-container .button:hover {
-  color: rgb(187, 20, 108);
+  color: rgb(255, 20, 147);
 }
 
 .nav-2 {
@@ -126,7 +126,7 @@ body {
   }
   .nav-2 a:hover {
     transform: translate(0, -5px);
-    color: rgb(187, 20, 108);
+    color: rgb(255, 20, 147);
     transition: 0.4s;
     background-color: transparent;
   }
@@ -146,7 +146,7 @@ body {
     text-decoration: none;
   }
   .icon:hover {
-    color: rgb(187, 20, 108);
+    color: rgb(255, 20, 147);
     transform: scale(1.2);
   }
   .mobile-menu-button-container {

@@ -4,6 +4,12 @@
   padding: 0;
 }
 
+body {
+  position: relative;
+  min-height: 100vh;
+  min-height: 100%;
+}
+
 @font-face {
   font-family: stratosFont;
   src: url("/assets/fonts/stratos-font-family-1683725785-0/stratos-extrabold-TRIAL-BF63c6049ff24de.otf");
@@ -40,8 +46,8 @@ span {
 }
 
 section {
-  min-height: 100vh;
   width: 95vw;
+  min-height: 100vh;
 }
 
 .fixed-bg {

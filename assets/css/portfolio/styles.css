@@ -58,7 +58,7 @@
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-  transition-duration: 0.5s;
+  transition-duration: 0.7s;
 }
 .button-project span {
   font-family: stratosFont;
@@ -71,7 +71,7 @@
   height: 80%;
   width: 90%;
   background-color: rgba(255, 20, 147, 0.5);
-  transition-duration: 0.5s;
+  transition-duration: 0.7s;
 }
 
 .button-project:hover + .project-name {

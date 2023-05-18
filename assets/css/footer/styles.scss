@@ -1,5 +1,5 @@
 .footer{
-    position: relative;
+    position:relative;
     bottom: 0;
 
     display: flex;
@@ -10,7 +10,7 @@
 
     .icon{
         color: white;
-        opacity: 1;
+        opacity: 1; //fix icon disappearing (script for mobiles)
     }
 }
 
