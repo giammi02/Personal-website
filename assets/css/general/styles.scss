@@ -60,7 +60,7 @@ section{
 .fixed-bg{
   position: fixed;
   top: 0;
-  bottom: -200px;
+  bottom: 0; //-200px;
   left:0;
   right:0;
   background-image: url(/assets/img/bg-blue-vertical.svg);  
