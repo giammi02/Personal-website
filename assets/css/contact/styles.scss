@@ -1,5 +1,9 @@
 $fontColor: rgba(92, 92, 92, 0.9);
 
+
+#contact{
+  min-height: calc(100vh - 280px);  //makes the footer appear at the same time of contact form (280px is 200px negative bottom of footer + 80px footer's height)
+}
 .contact-container{
   display:flex;
   flex-direction: column;

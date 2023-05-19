@@ -1,14 +1,14 @@
 
 
 .footer{
-    position: absolute;
+    position: relative;
 
-    bottom: 0px; //make the footer stay at the bottom
+    bottom: -200px; //make the footer stay at the bottom
     right:0;
     left:0;
-    padding-bottom: 0;
     overflow: hidden;
 
+    margin-bottom: -80px;
     display: flex;
     flex-direction: column;
     height: 80px;

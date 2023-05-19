@@ -1,10 +1,10 @@
 .footer {
-  position: absolute;
-  bottom: 0px;
+  position: relative;
+  bottom: -200px;
   right: 0;
   left: 0;
-  padding-bottom: 0;
   overflow: hidden;
+  margin-bottom: -80px;
   display: flex;
   flex-direction: column;
   height: 80px;
