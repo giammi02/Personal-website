@@ -1,19 +1,23 @@
 
 
 .footer{
-    position:absolute;
-    bottom: 0;
-    left:0;
+    position: absolute;
+    z-index: 100;
+
+    bottom: -500px; //make the footer stay at the bottom
     right:0;
+    left:0;
+    margin-bottom: 0;
+    padding-bottom: 0;
     overflow: hidden;
 
-    display: flex;
+    display: block;
     flex-direction: column;
     height: 80px;
 
     background-color: rgba(0, 16, 28); 
 
-    margin-top: auto;
+    //margin-top: 10%;
     .icon{
         color: white;
         opacity: 1; //fix icon disappearing (script for mobiles)
