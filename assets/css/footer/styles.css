@@ -1,14 +1,11 @@
 .footer {
   position: absolute;
-  z-index: 100;
-  top: -500px;
-  bottom: -500px;
+  bottom: 0px;
   right: 0;
   left: 0;
-  margin-bottom: 0;
   padding-bottom: 0;
   overflow: hidden;
-  display: block;
+  display: flex;
   flex-direction: column;
   height: 80px;
   background-color: rgb(0, 16, 28);
@@ -46,12 +43,12 @@
 
 @media (min-width: 768px) {
   .footer {
-    justify-content: space-around;
     flex-direction: row;
   }
   .footer-1 {
     height: 100%;
     width: 50%;
+    margin: 0;
   }
   .container-footer-2 {
     height: 100%;
