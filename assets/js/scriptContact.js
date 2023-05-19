@@ -3,8 +3,9 @@
     emailjs.init('_HWVM4cS9nTqwC33w');
 })();
 
+let contactForm= document.getElementById('contact-form');
 
-document.getElementById('contact-form').addEventListener('submit', function (event) {
+contactForm.addEventListener('submit', function (event) {
     event.preventDefault();
     let submitMessage = document.querySelector("[data-submit-message]");
         // generate a five digit number for the contact_number variable
