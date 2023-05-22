@@ -58,7 +58,7 @@
   outline-color: rgb(187, 20, 108);
 }
 
-.submit {
+.submit-button {
   position: relative;
   margin-top: 2vw;
   height: 10%;
@@ -66,6 +66,7 @@
   font-family: stratosFont;
   color: rgba(92, 92, 92, 0.9);
   border-radius: 5px;
+  border: none;
 }
 
 ::-moz-placeholder:focus { /* Chrome, Firefox, Opera, Safari 10.1+ */

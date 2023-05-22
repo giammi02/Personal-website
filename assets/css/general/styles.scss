@@ -78,6 +78,35 @@ section{
   text-decoration: none;
 }
 
+//classes for animations 
+.hidden-right {
+  opacity: 0;
+  transform: translateY(20%);
+  transform: translateX(20%);
+}
+
+.hidden-left {
+  opacity: 0;
+  transform: translateY(20%);
+  transform: translateX(-20%);
+
+}
+
+//main animation for the pages' elements (except home)
+.fadeIn-translate{
+animation: fadeIn-translate 1s forwards; 
+transition: 1s;
+}
+
+@keyframes fadeIn-translate{
+from{}
+to{
+  opacity: 1;
+  transform: translateY(0%);
+  transform: translateX(0%);
+}
+}
+
 @media only screen and (min-width:768px) {
   h2{
     font-size: 1.8em;

@@ -73,7 +73,7 @@ $fontColor: rgba(92, 92, 92, 0.9);
     outline-color: rgb(187, 20, 108);
   }
 
-.submit{
+.submit-button{
   position: relative;
   margin-top: 2vw;
   height: 10%;
@@ -81,7 +81,9 @@ $fontColor: rgba(92, 92, 92, 0.9);
 
   font-family: stratosFont;
   color: $fontColor;
+
   border-radius: 5px;
+  border: none;
 }
 
 ::placeholder:focus { /* Chrome, Firefox, Opera, Safari 10.1+ */
