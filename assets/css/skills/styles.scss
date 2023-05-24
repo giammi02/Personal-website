@@ -131,6 +131,33 @@ background-image: url(/assets/img/languages/javascript.png);
 }
 
 
+.hidden-right {
+    opacity: 0;
+    transform: translateY(15%);
+    transform: translateX(15%);
+  }
+  
+  .hidden-left {
+    opacity: 0;
+    transform: translateY(15%);
+    transform: translateX(-15%);
+  
+  }
+  
+  .fadeIn-translate{
+  animation: fadeIn-translate 1s forwards; 
+  transition: 1s;
+  }
+  
+  @keyframes fadeIn-translate{
+  from{}
+  to{
+    opacity: 1;
+    transform: translateY(0%);
+    transform: translateX(0%);
+  }
+  }
+
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {

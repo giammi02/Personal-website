@@ -121,6 +121,30 @@
   background-image: url(/assets/img/languages/EnFlag.png);
 }
 
+.hidden-right {
+  opacity: 0;
+  transform: translateY(15%);
+  transform: translateX(15%);
+}
+
+.hidden-left {
+  opacity: 0;
+  transform: translateY(15%);
+  transform: translateX(-15%);
+}
+
+.fadeIn-translate {
+  animation: fadeIn-translate 1s forwards;
+  transition: 1s;
+}
+
+@keyframes fadeIn-translate {
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+    transform: translateX(0%);
+  }
+}
 @media (min-width: 576px) {
   .skills-card h3 {
     font-size: 4vw;
