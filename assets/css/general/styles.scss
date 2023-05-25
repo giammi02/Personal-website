@@ -60,7 +60,7 @@ section{
 .fixed-bg{
   position: fixed;
   top: 0;
-  bottom: -200px; //fix the render of the bg when scroll
+  bottom: -200px; //fix the render of the bg when scroll on mobile phones
   left:0;
   right:0;
   background-image: url(/assets/img/bg-blue-vertical.svg);  
