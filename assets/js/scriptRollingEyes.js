@@ -20,6 +20,7 @@ document.addEventListener("mousemove", (e) => {
     }
 });
 
+//character voice
 character.addEventListener("click", ()=>
 {
     lordeAudio.play();
